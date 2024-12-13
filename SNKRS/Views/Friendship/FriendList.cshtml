@@ -1,0 +1,21 @@
+﻿@model IEnumerable<SNKRS.Models.ApplicationUser>
+
+@{
+    ViewBag.Title = "Your Friends";
+}
+
+<h2>Your Friends</h2>
+
+@if (!Model.Any())
+{
+    <p>You have no friends yet.</p>
+}
+else
+{
+    <ul>
+        @foreach (var friend in Model)
+        {
+            <li>@friend.UserName</li>
+        }
+    </ul>
+}

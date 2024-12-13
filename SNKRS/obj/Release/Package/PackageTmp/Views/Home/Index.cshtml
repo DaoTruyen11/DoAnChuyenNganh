@@ -1,0 +1,111 @@
+﻿@model SNKRS.ViewModels.HomeViewModel
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<section class="highlight-phone">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="intro">
+                    <h4>Air Jordan 1</h4>
+                    <h2>University Blue<br></h2>
+                    <p>Familiar colours, applied with a classic colour-blocking scheme, characterise this Air Jordan 1. The shoe brings genuine University Blue leather to the ankle, heel, toe and outsole, with black on the Swoosh and collar and contrasting white on the quarter panel, midsole, tongue and toe box. A black Wings logo with University Blue branding on the tongue helps finish off the model's clean and classic detailing.</p><a class="btn btn-primary" role="button" href="#">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="w-100" src="~/Content/Images/Bluecarttt_2048x2048.png">
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h1 class="py-3">On-sale</h1>
+        <div class="reflow-product-list ref-cards">
+            <div class="ref-products">
+                @foreach (var item in Model.OnSale)
+                {
+                    <a class="ref-product" href="@Url.Action("Details", "Product", new { id = item.Id })">
+                        <img class="ref-image" src="@item.Image" loading="lazy">
+                        <div class="ref-product-data">
+                            <div class="ref-product-info">
+                                <h5 class="ref-name">@item.Name</h5>
+                            </div>
+                            @if (item.SalePrice > 0)
+                            {
+                                <p class="ref-price"><span class="text-decoration-line-through text-muted">@String.Format("{0:#,##0}", item.Price)</span> - @String.Format("{0:#,##0}", item.SalePrice)<u>đ</u></p>
+                            }
+                            else
+                            {
+                                <p class="ref-price">@String.Format("{0:#,##0}", item.Price)<u>đ</u></p>
+                            }
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h1 class="py-3">Upcoming</h1>
+        <div class="reflow-product-list ref-cards">
+            <div class="ref-products">
+                @foreach (var item in Model.Upcoming)
+                {
+                    <a class="ref-product" href="@Url.Action("Details", "Product", new { id = item.Id })">
+                        <img class="ref-image" src="@item.Image" loading="lazy">
+                        <div class="ref-product-data">
+                            <div class="ref-product-info">
+                                <h5 class="ref-name">@item.Name</h5>
+                            </div>
+                            @if (item.SalePrice > 0)
+                            {
+                                <p class="ref-price"><span class="text-decoration-line-through text-muted">@String.Format("{0:#,##0}", item.Price)</span> - @String.Format("{0:#,##0}", item.SalePrice)<u>đ</u></p>
+                            }
+                            else
+                            {
+                                <p class="ref-price">@String.Format("{0:#,##0}", item.Price)<u>đ</u></p>
+                            }
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h1 class="py-3">Best-selling</h1>
+        <div class="reflow-product-list ref-cards">
+            <div class="ref-products">
+                @foreach (var item in Model.Best_selling)
+                {
+                    <a class="ref-product" href="@Url.Action("Details", "Product", new { id = item.Id })">
+                        <img class="ref-image" src="@item.Image" loading="lazy">
+                        <div class="ref-product-data">
+                            <div class="ref-product-info">
+                                <h5 class="ref-name">@item.Name</h5>
+                            </div>
+                            @if (item.SalePrice > 0)
+                            {
+                                <p class="ref-price"><span class="text-decoration-line-through text-muted">@String.Format("{0:#,##0}", item.Price)</span> - @String.Format("{0:#,##0}", item.SalePrice)<u>đ</u></p>
+                            }
+                            else
+                            {
+                                <p class="ref-price">@String.Format("{0:#,##0}", item.Price)<u>đ</u></p>
+                            }
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="brands"><a href="#"> <img src="~/Content/Images/instacart.png"><img src="~/Content/Images/kickstarter.png"><img src="~/Content/Images/lyft.png"><img src="~/Content/Images/shopify.png"><img src="~/Content/Images/pinterest.png"><img src="~/Content/Images/twitter.png"></a></div>
+</section>

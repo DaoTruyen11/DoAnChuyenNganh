@@ -1,0 +1,54 @@
+﻿@model SNKRS.Models.ApplicationUser
+
+@{
+    ViewBag.Title = "Cài đặt";
+    ViewBag.Current = "Settings";
+    Layout = "~/Views/Account/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Setting", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="card">
+        <div class="card-body">
+            @Html.HiddenFor(model => model.Id)
+
+            <!-- Tên người dùng -->
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.Name, "Tên", new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+
+            <!-- Số điện thoại -->
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.PhoneNumber, "Số điện thoại ", new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+
+            <!-- Địa chỉ -->
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.Address, "Địa chỉ", new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+
+            <!-- Ảnh đại diện -->
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.ProfileImage, "Ảnh đại diện", new { htmlAttributes = new { @class = "form-control" } })
+                <input type="file" name="ProfileImage" class="form-control" />
+
+                @if (!string.IsNullOrEmpty(Model.ProfileImage))
+                {
+                    <img src="@Model.ProfileImage" alt="Avatar" class="img-thumbnail" style="max-width: 150px; margin-top: 10px;" />
+                }
+                else
+                {
+                    <img src="/images/default-avatar.jpg" alt="Avatar" class="img-thumbnail" style="max-width: 150px; margin-top: 10px;" />
+                }
+            </div>
+
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success">Lưu</button>
+            </div>
+        </div>
+    </div>
+}

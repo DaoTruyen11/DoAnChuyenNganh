@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container my-5 min-vh-100">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="list-group">
+                <a href="@Url.Action("Setting", "Account")" class="list-group-item list-group-item-action py-3" aria-current="true">
+                    Settings
+                </a>
+                <a href="@Url.Action("OrderHistory", "Account")" class="list-group-item list-group-item-action py-3">Order history</a>
+                <a href="@Url.Action("ChangePassword", "Account")" class="list-group-item list-group-item-action py-3">Change password</a>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            @RenderBody()
+        </div>
+    </div>
+
+</div>
+
+@section scripts {
+    <script>
+        $("a:contains(@ViewBag.Current)").addClass("active");
+    </script>    
+}

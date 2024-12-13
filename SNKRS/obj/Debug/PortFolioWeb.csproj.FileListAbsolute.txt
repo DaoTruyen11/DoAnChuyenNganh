@@ -1,0 +1,860 @@
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\PortfolioWeb.dll.config
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\PortfolioWeb.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\PortfolioWeb.pdb
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\csc.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\csc.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\csc.rsp
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\csi.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\csi.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\csi.rsp
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\System.Buffers.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\System.Memory.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\vbc.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\vbc.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\vbc.rsp
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Antlr3.Runtime.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\EntityFramework.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Newtonsoft.Json.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Owin.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\PagedList.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\PagedList.Mvc.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.Helpers.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.Mvc.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.Optimization.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.Razor.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.WebPages.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\WebGrease.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Newtonsoft.Json.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\PagedList.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\PagedList.Mvc.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.Helpers.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.Mvc.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.Optimization.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.Razor.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.WebPages.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Antlr3.Runtime.pdb
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\EntityFramework.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\obj\Debug\PortfolioWeb.csproj.AssemblyReference.cache
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\obj\Debug\SNKRS.Migrations.update.resources
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\obj\Debug\PortfolioWeb.csproj.GenerateResource.cache
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\obj\Debug\PortfolioWeb.csproj.CoreCompileInputs.cache
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\obj\Debug\Portfoli.9A8C9958.Up2Date
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\obj\Debug\PortfolioWeb.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\PortfolioWeb\obj\Debug\PortfolioWeb.pdb
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.AssemblyReference.cache
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\SNKRS.Migrations.update.resources
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.GenerateResource.cache
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.CoreCompileInputs.cache
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PortfolioWeb.dll.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PortfolioWeb.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PortfolioWeb.pdb
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csc.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csc.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csc.rsp
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csi.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csi.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csi.rsp
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Buffers.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Memory.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\vbc.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\vbc.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\vbc.rsp
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Antlr3.Runtime.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\EntityFramework.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\EntityFramework.SqlServer.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Newtonsoft.Json.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Owin.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PagedList.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PagedList.Mvc.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Helpers.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Mvc.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Optimization.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Razor.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\WebGrease.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Newtonsoft.Json.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PagedList.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PagedList.Mvc.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Helpers.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Mvc.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Optimization.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Razor.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Antlr3.Runtime.pdb
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\EntityFramework.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\EntityFramework.SqlServer.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\Portfoli.9A8C9958.Up2Date
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\PortfolioWeb.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\PortfolioWeb.pdb
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\SNKRS.Migrations.updatemd.resources
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\CloudinaryDotNet.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\dotenv.net.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Buffers.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Memory.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Numerics.Vectors.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\CloudinaryDotNet.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Buffers.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Memory.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Numerics.Vectors.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\PortfolioWeb.dll.config
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\PortfolioWeb.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\PortfolioWeb.pdb
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\csc.exe
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\csc.exe.config
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\csc.rsp
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\csi.exe
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\csi.exe.config
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\csi.rsp
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\System.Buffers.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\System.Memory.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\vbc.exe
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\vbc.exe.config
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\vbc.rsp
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Antlr3.Runtime.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\CloudinaryDotNet.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\dotenv.net.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\EntityFramework.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Newtonsoft.Json.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Owin.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\PagedList.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\PagedList.Mvc.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Buffers.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Memory.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Numerics.Vectors.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.Helpers.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.Mvc.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.Optimization.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.Razor.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\WebGrease.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\CloudinaryDotNet.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Newtonsoft.Json.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\PagedList.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\PagedList.Mvc.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Buffers.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Memory.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Numerics.Vectors.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.Helpers.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.Mvc.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.Optimization.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.Razor.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Antlr3.Runtime.pdb
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\EntityFramework.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.AssemblyReference.cache
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.CoreCompileInputs.cache
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\obj\Debug\Portfoli.9A8C9958.Up2Date
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.dll
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.pdb
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.update.resources
+C:\Users\DELL-PC\Downloads\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.GenerateResource.cache
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\PortfolioWeb.dll.config
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\PortfolioWeb.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\PortfolioWeb.pdb
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\csc.exe
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\csc.exe.config
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\csc.rsp
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\csi.exe
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\csi.exe.config
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\csi.rsp
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\System.Buffers.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\System.Memory.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\vbc.exe
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\vbc.exe.config
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\vbc.rsp
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Antlr3.Runtime.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\CloudinaryDotNet.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\dotenv.net.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\EntityFramework.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\EntityFramework.SqlServer.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Newtonsoft.Json.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Owin.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\PagedList.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\PagedList.Mvc.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Buffers.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Memory.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Numerics.Vectors.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.Helpers.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.Mvc.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.Optimization.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.Razor.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\WebGrease.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\CloudinaryDotNet.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Newtonsoft.Json.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\PagedList.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\PagedList.Mvc.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Buffers.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Memory.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Numerics.Vectors.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.Helpers.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.Mvc.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.Optimization.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.Razor.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Antlr3.Runtime.pdb
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\EntityFramework.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\EntityFramework.SqlServer.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.AssemblyReference.cache
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.updateuserid.resources
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.Updatez.resources
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.GenerateResource.cache
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.CoreCompileInputs.cache
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\obj\Debug\Portfoli.9A8C9958.Up2Date
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.dll
+C:\Users\Ngomu\Downloads\DACS (1)\DACS (1)\DACS\SNKRS\obj\Debug\PortfolioWeb.pdb
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\PortfolioWeb.dll.config
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\PortfolioWeb.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\PortfolioWeb.pdb
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csc.exe
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csc.exe.config
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csc.rsp
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csi.exe
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csi.exe.config
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csi.rsp
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Buffers.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Memory.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\vbc.exe
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\vbc.exe.config
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\vbc.rsp
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Antlr3.Runtime.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\CloudinaryDotNet.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\dotenv.net.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\EntityFramework.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\EntityFramework.SqlServer.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Newtonsoft.Json.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Owin.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\PagedList.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\PagedList.Mvc.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Buffers.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Memory.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Numerics.Vectors.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Helpers.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Mvc.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Optimization.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Razor.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.Deployment.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.Razor.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\WebGrease.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\CloudinaryDotNet.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Newtonsoft.Json.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\PagedList.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\PagedList.Mvc.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Buffers.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Memory.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Numerics.Vectors.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Helpers.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Mvc.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Optimization.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Razor.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.Deployment.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.Razor.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Antlr3.Runtime.pdb
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\EntityFramework.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\EntityFramework.SqlServer.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.AssemblyReference.cache
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.CoreCompileInputs.cache
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\Portfoli.9A8C9958.Up2Date
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.pdb
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.update.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.GenerateResource.cache
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authentication.Core.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authorization.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Mvc.Core.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Routing.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.DotNet.PlatformAbstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyModel.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.ObjectPool.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Options.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Primitives.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Net.Http.Headers.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.ComponentModel.Annotations.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Diagnostics.DiagnosticSource.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Text.Encodings.Web.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Threading.Tasks.Extensions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authentication.Core.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authorization.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Mvc.Core.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Routing.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.ObjectPool.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Options.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Primitives.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Net.Http.Headers.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Diagnostics.DiagnosticSource.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Text.Encodings.Web.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Threading.Tasks.Extensions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.AddLikeAndComment.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.AddPostIdToComment.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\OpenAI.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.ClientModel.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Memory.Data.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Text.Json.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.ValueTuple.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\OpenAI.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.ClientModel.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Memory.Data.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Text.Json.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.ValueTuple.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.AddPostModel.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.AddRepliesTable.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.AddRepliesTable1.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.AddParentCommentIdToComments.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Azure.AI.OpenAI.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Azure.Core.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Connections.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Common.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Core.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.WebSockets.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.IO.Pipelines.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Net.WebSockets.WebSocketProtocol.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Security.Principal.Windows.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Threading.Channels.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Azure.AI.OpenAI.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Azure.Core.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.Core.pdb
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Connections.Abstractions.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Connections.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Connections.Common.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Common.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Core.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.WebSockets.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.IO.Pipelines.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\System.Threading.Channels.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.AddChatMessage.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.UpdateChatModel.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.AddFriendshipTable.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.AddFriendshipTable1.resources
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.Core.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.PlatformServices.dll
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.pdb
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.xml
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.Core.pdb
+D:\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.Core.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.AssemblyReference.cache
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.Migrations.update.resources
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.GenerateResource.cache
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.csproj.CoreCompileInputs.cache
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\dll\x86\OpenCvSharpExtern.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\dll\x86\opencv_videoio_ffmpeg4100.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\dll\x64\OpenCvSharpExtern.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\x86\leptonica-1.82.0.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\x86\tesseract50.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\x64\leptonica-1.82.0.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\x64\tesseract50.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\tessdata\eng.traineddata
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\tessdata\vie.traineddata
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\PortfolioWeb.dll.config
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\PortfolioWeb.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\PortfolioWeb.pdb
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csc.exe
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csc.exe.config
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csc.rsp
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csi.exe
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csi.exe.config
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\csi.rsp
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Buffers.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Memory.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\vbc.exe
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\vbc.exe.config
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\vbc.rsp
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Antlr3.Runtime.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Azure.AI.OpenAI.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Azure.Core.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\CloudinaryDotNet.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\dotenv.net.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\EntityFramework.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\EntityFramework.SqlServer.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.Core.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.PlatformServices.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Routing.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Options.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Newtonsoft.Json.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\OpenAI.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Owin.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\PagedList.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\PagedList.Mvc.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Buffers.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.ClientModel.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.ComponentModel.Annotations.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.IO.Pipelines.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Memory.Data.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Memory.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Numerics.Vectors.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Security.Principal.Windows.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Text.Encodings.Web.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Text.Json.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Threading.Channels.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.ValueTuple.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Helpers.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Mvc.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Optimization.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Razor.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Tesseract.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\WebGrease.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Azure.AI.OpenAI.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Azure.Core.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\CloudinaryDotNet.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\EntityFramework.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\EntityFramework.SqlServer.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.pdb
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.Core.pdb
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Google.Apis.Core.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authentication.Core.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authorization.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Connections.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Connections.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Connections.Common.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Mvc.Core.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Routing.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Common.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Core.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.WebSockets.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Options.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Newtonsoft.Json.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\OpenAI.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\PagedList.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\PagedList.Mvc.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Buffers.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.ClientModel.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.IO.Pipelines.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Memory.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Memory.Data.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Numerics.Vectors.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Text.Encodings.Web.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Text.Json.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Threading.Channels.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.ValueTuple.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Helpers.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Mvc.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Razor.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\System.Web.Optimization.xml
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\bin\Antlr3.Runtime.pdb
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\Portfoli.9A8C9958.Up2Date
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.dll
+C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\obj\Debug\PortfolioWeb.pdb

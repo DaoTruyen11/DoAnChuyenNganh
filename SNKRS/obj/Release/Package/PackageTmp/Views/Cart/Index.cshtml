@@ -1,0 +1,144 @@
+﻿@model IEnumerable<SNKRS.Models.Cart>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container min-vh-100">
+    <div data-reflow-type="shopping-cart">
+        <div class="reflow-shopping-cart">
+
+            <div class="ref-loading-overlay"></div>
+            @if (Model.Count() == 0)
+            {
+                <div class="ref-message" style="display: block;">Your shopping cart is empty.</div>
+
+            }
+            else
+            {
+                <div class="ref-cart" style="display: block;">
+                    <div class="ref-heading">Shopping Cart</div>
+                    <div class="ref-th">
+                        <div class="ref-product-col">Product</div>
+                        <div class="ref-price-col">Price</div>
+                        <div class="ref-price-col">Sale Price</div>
+                        <div class="ref-quantity-col">Quantity</div>
+                        <div class="ref-total-col">Total</div>
+                    </div>
+                    <div class="ref-cart-table">
+                        @foreach (var item in Model)
+                        {
+                        <div class="ref-product" data-id="548179365" data-quantity="2">
+                            <div class="ref-product-col">
+                                <div class="ref-product-wrapper">
+                                    <img class="ref-product-photo" src="@item.ProductImage" alt="Paisley">
+                                    <div class="ref-product-data">
+                                        <div class="ref-product-info">
+                                            <div class="ref-product-name">@item.ProductName</div>
+                                            <div class="ref-product-category">@item.ProductSize</div>
+                                            <div class="ref-product-variants"></div>
+                                            <div class="ref-product-personalization-holder"></div>
+                                        </div>
+                                        <div class="ref-product-price">@String.Format("{0:#,##0}", item.ProductPrice)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ref-price-col">
+                                <div class="ref-product-price text-decoration-line-through text-muted" >@String.Format("{0:#,##0}", item.ProductPrice)</div>
+                            </div>
+                            <div class="ref-price-col">
+                                <div class="ref-product-price" id="Price-@item.ProductSizeId">@String.Format("{0:#,##0}", item.ProductSalePrice)</div>
+                            </div>
+                            <div class="ref-quantity-col">
+                                <div class="ref-product-quantity">
+                                    <div class="ref-quantity-container" data-reflow-product="548179365" data-reflow-quantity="2">
+                                        <div class="ref-quantity-widget">
+                                            <div class="ref-decrease" onclick="decrease(@item.ProductSizeId)">-</div>
+                                            <input id="Quantity-@item.ProductSizeId" type="text" value="@item.Quantity" disabled>
+                                            <div class="ref-increase" onclick="increase(@item.ProductSizeId)">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="ref-product-remove" onclick="remove(@item.ProductSizeId)">Remove</div>
+                                </div>
+                            </div>
+                            <div class="ref-total-col">
+                                <div class="ref-product-total">
+                                    <div class="ref-product-total-sum" id="Amount-@item.ProductSizeId">@String.Format("{0:#,##0}", item.Amount)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        }
+                    </div>
+                    <div class="ref-footer">
+                        <div class="ref-links"></div>
+                        <div class="ref-totals">
+                            <div class="ref-subtotal">Subtotal: <span id="Subtotal">@String.Format("{0:#,##0}", ViewBag.Amount)</span></div>
+                            <div class="ref-shipping-taxes">Shipping and taxes are calculated<br> during checkout.</div>
+                            <a class="btn btn-lg btn-success" href="@Url.Action("Checkout","Cart")">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        function updateAmount() {
+            $.ajax({
+                url: "@Url.Action("Amount", "Cart")",
+                success: function (res) {
+                    $("#Subtotal").text(parseFloat(res).toLocaleString());
+                }
+            });
+        }
+
+        function increase(id) {
+            var data = { Id: id };
+            $.ajax({
+                url: "@Url.Action("IncreaseQuantity", "Cart")",
+                data: data,
+                success: function (res) {
+                    $(`#Quantity-${id}`).val(res);
+                    var price = $(`#Price-${id}`).text();
+                    price = price.replaceAll(',', '')
+                    amount = parseInt(res) * parseInt(price);
+                    $(`#Amount-${id}`).text(amount.toLocaleString());
+                    updateAmount();
+                }
+            });
+        }
+
+        function decrease(id) {
+            var data = { Id: id };
+            $.ajax({
+                url: "@Url.Action("DecreaseQuantity", "Cart")",
+                data: data,
+                success: function (res) {
+                    $(`#Quantity-${id}`).val(res);
+                    var price = $(`#Price-${id}`).text();
+                    price = price.replaceAll(',', '')
+                    amount = parseInt(res) * parseInt(price);
+                    $(`#Amount-${id}`).text(amount.toLocaleString());
+                    updateAmount();
+                }
+            });
+        }
+
+        function remove(id) {
+            var data = { Id: id };
+            $.ajax({
+                url: "@Url.Action("Delete", "Cart")",
+                data: data,
+                success: function (res) {
+                    $(`#Amount-${id}`).closest(".ref-product").remove();
+                    updateAmount();
+                }
+            });
+        }
+    </script>
+}

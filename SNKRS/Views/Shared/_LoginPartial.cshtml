@@ -1,0 +1,38 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @User.Identity.GetUserName()
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="@Url.Action("Index", "Dashboard", new {Area = "Admin"})">Bảng điều khiển</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                }
+                <li><a class="dropdown-item" href="@Url.Action("Index", "Portfolio")">Portfolio của tôi</a></li>
+                <li><a class="dropdown-item" href="@Url.Action("Setting", "Account")">Cài đặt</a></li>
+                <li><a class="dropdown-item" href="@Url.Action("ChangePassword", "Account")">Đổi mật khẩu</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Đăng xuất</a></li>
+            </ul>
+        </li>
+
+    }
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link" href="@Url.Action("Login", "Account")">Đăng nhập</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="@Url.Action("Register", "Account")">Đăng ký</a>
+    </li>
+}

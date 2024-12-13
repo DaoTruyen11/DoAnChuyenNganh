@@ -1,0 +1,359 @@
+﻿<h2 class="chat-header">Chat</h2>
+<!-- Thêm liên kết CSS của Toastr -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+<!-- Thêm mã JavaScript của Toastr -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+<style>
+    .chat-container {
+        display: flex;
+        max-width: 1000px;
+        margin: 40px auto;
+        border: 1px solid #e6e6e6;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+        height: 700px; /* Đặt chiều cao cố định nếu cần */
+    }
+
+
+    /* Danh sách người dùng */
+    .chat-list {
+        width: 30%;
+        background-color: #f5f5f5;
+        border-right: 1px solid #e6e6e6;
+        overflow-y: auto;
+        padding: 10px;
+    }
+
+    .chat-header {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: #1877f2;
+        padding: 10px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .chat-search {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        font-size: 14px;
+        background-color: #fff;
+    }
+
+    .chat-item {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s, box-shadow 0.2s;
+    }
+
+        .chat-item:hover {
+            background-color: #e6f0ff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+    .chat-avatar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fff;
+    }
+
+    .status-dot {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 12px;
+        height: 12px;
+        background-color: #ccc;
+        border: 2px solid #f5f5f5;
+        border-radius: 50%;
+    }
+
+        .status-dot.online {
+            background-color: #31a24c;
+        }
+
+    /* Khung chat */
+    .chat-box {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 20px;
+        position: relative;
+        height: 600px; /* Đặt chiều cao cố định */
+    }
+
+
+    .messages {
+        flex-grow: 1;
+        height: 400px; /* Giới hạn chiều cao cố định */
+        overflow-y: auto;
+        padding: 15px;
+        border-bottom: 1px solid #e6e6e6;
+        background-color: #f0f2f5;
+        border-radius: 10px;
+    }
+
+
+    .message {
+        margin: 10px 0;
+        display: flex;
+        align-items: flex-start;
+    }
+
+        .message.sent {
+            justify-content: flex-end;
+        }
+
+        .message.received {
+            justify-content: flex-start;
+        }
+
+    .message-content {
+        max-width: 60%;
+        padding: 12px 16px;
+        border-radius: 20px;
+        font-size: 15px;
+        line-height: 1.4;
+        word-wrap: break-word;
+        position: relative;
+    }
+
+    .message.sent .message-content {
+        background-color: #0084ff;
+        color: #fff;
+    }
+
+    .message.received .message-content {
+        background-color: #e4e6eb;
+        color: #333;
+    }
+
+    .message-time {
+        font-size: 12px;
+        color: #999;
+        margin-top: 5px;
+    }
+
+    /* Input gửi tin nhắn */
+    #chat-form {
+        display: flex;
+        padding: 15px;
+        background-color: #f0f2f5;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    textarea.input-message {
+        flex-grow: 1;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        resize: none;
+        font-size: 15px;
+        background-color: #fff;
+        outline: none;
+    }
+
+    .send-button {
+        background-color: #1877f2;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 25px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+        .send-button:hover {
+            background-color: #145dbf;
+        }
+</style>
+<div class="chat-container">
+    <div class="chat-list">
+        <h2 class="chat-header">Đoạn chat</h2>
+   
+        <div class="search-container">
+            <input type="text" placeholder="🔍 Tìm kiếm trên Messenger" class="chat-search" id="search-input" />
+        </div>
+        <ul id="user-list">
+            @foreach (var user in ViewBag.Users)
+            {
+                <li class="chat-item" data-username="@user.UserName">
+                    <div class="chat-avatar">
+                        <img src="@(user.ProfileImage ?? "https://cellphones.com.vn/sforum/wp-content/uploads/2023/10/avatar-trang-4.jpg")" alt="Avatar">
+                    </div>
+                    <div class="chat-details">
+                        <p class="chat-name">@user.UserName</p>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="chat-box">
+        <div class="messages" id="messages">
+            <!-- Nội dung tin nhắn sẽ được tải động -->
+        </div>
+        <form id="chat-form">
+            @Html.AntiForgeryToken()
+            <textarea name="content" placeholder="Nhập tin nhắn..." class="input-message" required></textarea>
+            <button type="submit" class="send-button">✈️ Gửi</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+// Biến lưu trữ người nhận
+// Biến lưu trữ người nhận
+let currentRecipient = null;
+
+// Xử lý sự kiện khi nhấn vào người dùng
+$('#user-list').on('click', '.chat-item', function () {
+    currentRecipient = $(this).data('username');  // Lấy tên người nhận từ data-attribute
+    $('.chat-header').text('Chat với ' + currentRecipient);
+    loadMessages(currentRecipient);  // Tải tin nhắn của người nhận
+});
+
+// Hàm tải tin nhắn
+function loadMessages(recipientUserName) {
+    $.ajax({
+        url: '@Url.Action("GetMessages", "Chat")',
+        method: 'GET',
+        data: { recipientUserName: recipientUserName },
+        success: function (messages) {
+            $('#messages').empty();  // Xóa tin nhắn cũ
+
+            if (messages.length === 0) {
+                $('#messages').append('<p class="no-messages">Chưa có tin nhắn nào.</p>');
+                return;
+            }
+
+            messages.forEach(function (message) {
+                const messageHtml = `
+                    <div class="message ${message.isSent ? 'sent' : 'received'}">
+                        <div class="message-content">
+                            <strong class="sender-name">${message.isSent ? 'You' : recipientUserName}</strong>
+                            <p>${message.content}</p>
+                            <small class="message-time">${formatDateTime(message.sentAt)}</small>
+                        </div>
+                    </div>
+                `;
+                $('#messages').append(messageHtml);
+            });
+
+            scrollToBottom();
+
+            // Thông báo âm thanh
+            if (messages[messages.length - 1].isSent === false) {
+                const audio = new Audio('/path/to/notification-sound.mp3'); // Thay bằng đường dẫn đến file âm thanh của bạn
+                audio.play();
+            }
+        },
+        error: function () {
+            alert("Có lỗi xảy ra khi tải tin nhắn.");
+        }
+    });
+}
+
+
+// Hàm gửi tin nhắn
+$('#chat-form').on('submit', function (e) {
+    e.preventDefault();
+
+    const content = $('textarea[name="content"]').val().trim();
+
+    if (!currentRecipient) {
+        alert("Vui lòng chọn người nhận.");
+        return;
+    }
+
+    if (content === "") {
+        alert("Nội dung tin nhắn không được để trống.");
+        return;
+    }
+
+    $.ajax({
+        url: '@Url.Action("SendMessage", "Chat")',
+        method: 'POST',
+        headers: {
+            'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()  // Gửi token CSRF
+        },
+        data: {
+            recipientUserName: currentRecipient,
+            content: content
+        },
+        success: function (response) {
+            if (response.status === "success") {
+                const messageHtml = `
+                    <div class="message sent">
+                        <div class="message-content">
+                            <strong class="sender-name">You</strong>
+                            <p>${response.content}</p>
+                            <small class="message-time">${formatDateTime(response.sentAt)}</small>
+                        </div>
+                    </div>
+                `;
+                $('#messages').append(messageHtml);
+                $('textarea[name="content"]').val('');  // Xóa nội dung ô nhập tin nhắn sau khi gửi
+                scrollToBottom();
+            } else {
+                alert(response.message || "Có lỗi xảy ra khi gửi tin nhắn.");
+            }
+        },
+        error: function () {
+            alert("Có lỗi xảy ra khi gửi yêu cầu.");
+        }
+    });
+});
+
+// Hàm cuộn xuống tin nhắn mới nhất
+function scrollToBottom() {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+}
+
+// Hàm định dạng ngày giờ
+function formatDateTime(dateTime) {
+    const date = new Date(dateTime);
+    return date.toLocaleString('vi-VN', { hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit', year: 'numeric' });
+}
+    // Xử lý sự kiện khi người dùng nhập vào ô tìm kiếm
+    $('#search-input').on('input', function () {
+        const searchQuery = $(this).val().toLowerCase();  // Lấy giá trị tìm kiếm và chuyển thành chữ thường
+
+        // Duyệt qua từng người dùng trong danh sách và ẩn/hiện tùy thuộc vào tên có khớp với từ khóa tìm kiếm
+        $('#user-list .chat-item').each(function () {
+            const userName = $(this).find('.chat-details .chat-name').text().toLowerCase();
+
+            // Kiểm tra nếu tên người dùng khớp với từ khóa tìm kiếm
+            if (userName.includes(searchQuery)) {
+                $(this).show();  // Hiển thị người dùng nếu có khớp
+            } else {
+                $(this).hide();  // Ẩn người dùng nếu không khớp
+            }
+        });
+    });
+  
+
+</script>

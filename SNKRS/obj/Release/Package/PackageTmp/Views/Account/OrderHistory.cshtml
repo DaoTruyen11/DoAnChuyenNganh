@@ -1,0 +1,19 @@
+﻿@model IEnumerable<SNKRS.Models.Order>
+
+@{
+    ViewBag.Title = "Order history";
+    ViewBag.Current = "Order history";
+    Layout = "~/Views/Account/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="card mb-3">
+        <div class="card-body">
+            <p><b>Order Id: </b> #@item.Id</p>
+            <p><b>Date: </b> @item.Created_At</p>
+            <p><b>Date: </b> @String.Format("{0:#,##0}", item.Amount)</p>
+            <p><b>Status: </b> <span class="badge bg-primary">@item.OrderStatus.Name</span></p>
+        </div>
+    </div>
+}

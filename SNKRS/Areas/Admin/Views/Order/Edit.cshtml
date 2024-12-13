@@ -1,0 +1,79 @@
+﻿@model SNKRS.Areas.Admin.ViewModels.OrderViewModel
+
+@{
+    ViewBag.Title = "Edit Order";
+    ViewBag.Active = "Orders";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Edit", "Order"))
+{
+    @Html.AntiForgeryToken()
+    <div class="mb-3 text-left">
+        @Html.ActionLink("Back to list", "Index", "Category", new { @class = "btn btn-primary" })
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Id):
+                        #@Html.DisplayFor(model => model.Id, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name):
+                        @Html.DisplayFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Phone):
+                        @Html.DisplayFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Address):
+                        @Html.DisplayFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Amount):
+                        @string.Format("{0:#,##0}", Model.Amount)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Created_At):
+                        @Html.DisplayFor(model => model.Created_At, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.OrderDetails):
+                        <ul class="list-group">
+                            @foreach (var item in Model.OrderDetails)
+                            {
+                                <li class="list-group-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <img src="@item.ProductSize.Product.Image" width="100px">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3 ml-3">
+                                            <p><b>@item.ProductSize.Product.Name</b></p>
+                                            <p>Size: @item.ProductSize.Size</p>
+                                            <p>Quantity: @item.Quantity</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.OrderStatuses)
+                        @Html.DropDownListFor(model => model.StatusId, new SelectList(Model.OrderStatuses, "Id", "Name", Model.StatusId), new { @class = "form-control" })
+                    </div>
+                    <button type="submit" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

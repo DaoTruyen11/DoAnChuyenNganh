@@ -1,0 +1,132 @@
+﻿@model SNKRS.Areas.Admin.ViewModels.ProductViewModel
+<h2> Chi Tiết</h2>
+
+<div>
+    <main role="main">
+        <section class="bg-gray200 py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <article class="card shadow-sm">
+                            <div class="ref-media text-center">
+                                <div class="ref-preview">
+                                    <img class="ref-image active img-fluid" src="@Model.Image" id="image" data-reflow-preview-type="image" alt="@Model.Name" />
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    @{
+                                        // Hàm để tạo một màu ngẫu nhiên
+                                        string RandomColor()
+                                        {
+                                            var random = new Random();
+                                            return String.Format("#{0:X6}", random.Next(0x1000000));
+                                        }
+
+                                        // Lặp lại cho đến khi tìm được một màu không trùng với màu nền
+                                        string nameColor = RandomColor();
+                                        while (nameColor == "#ffffff" /*Màu nền hiện tại*/)
+                                        {
+                                            nameColor = RandomColor();
+                                        }
+                                    }
+
+                                    <div class="col text-center">
+                                        <h1 class="font-weight-bold" style="color: @nameColor">@Model.Name</h1>
+                                    </div>
+                                </div>
+                                <div class="row border-top">
+                                    <div class="col text-center">
+                                        <ul class="list-unstyled">
+                                            @foreach (var item in Model.ProductGalleries)
+                                            {
+                                                <div class="ref-thumbnail mx-2">
+                                                    <div class="ref-image-thumbnail" style="background-image: url(@item.Src);"></div>
+                                                </div>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row border-top">
+                                    <div class="col text-center">
+                                        <ul class="list-unstyled">
+                                            @foreach (var categoryName in Model.ProductCategoryNames)
+                                            {
+                                                <li>@categoryName</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row border-top">
+                                    <div class="col text-center">
+                                        @if (!string.IsNullOrEmpty(Model.Description))
+                                        {
+                                            <ul class="list-unstyled" style="text-align: left;">
+                                                @foreach (var item in Model.Description.Split(new[] { "</p>" }, StringSplitOptions.RemoveEmptyEntries))
+                                                {
+                                                    <li>@Html.Raw(item + "</p>")</li>
+                                                }
+                                            </ul>
+                                        }
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <!-- Begin Comments - replace 'demowebsite' with your own Disqus shortname -->
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+                            <script type="text/javascript">
+                                var disqus_shortname = 'demowebsite';
+                                var disqus_developer = 0;
+                                (function () {
+                                    var dsq = document.createElement('script');
+                                    dsq.type = 'text/javascript';
+                                    dsq.async = true;
+                                    dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        </div>
+                        <!-- End Comments -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</div>
+<style>
+    .ref-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .ref-image-thumbnail {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .ref-thumbnail:hover .ref-image-thumbnail {
+        border-color: #007bff;
+    }
+
+    .btn-gray200 {
+        background-color: #e2e6ea;
+        border: none;
+        color: #333;
+    }
+
+        .btn-gray200:hover {
+            background-color: #d6d9dc;
+            color: #000;
+        }
+</style>

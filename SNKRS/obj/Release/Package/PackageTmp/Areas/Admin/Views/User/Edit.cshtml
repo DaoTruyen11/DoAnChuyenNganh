@@ -1,0 +1,69 @@
+﻿@model SNKRS.Areas.Admin.ViewModels.UserViewModel
+
+@{
+    ViewBag.Title = "Create new Role";
+    ViewBag.Active = "Users";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section CustomHead {
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+}
+
+@using (Html.BeginForm("Edit", "User"))
+{
+    @Html.AntiForgeryToken()
+    <div class="mb-3 text-left">
+        @Html.ActionLink("Back to list", "Index", "User", new { @class = "btn btn-primary" })
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Id)
+                        @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name)
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Roles)
+                        <div class="select2-purple">
+                            @Html.DropDownListFor(model => model.Roles, new SelectList(Model.AllRole, "Id", "Name"), new { @class = "form-control select2", @multiple = "multiple", @data_placeholder = "Select roles" })
+                        </div>
+                    </div>
+                    <button class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section CustomScript {
+    <!-- Select2 -->
+    <script src="~/Content/AdminLTE/plugins/select2/js/select2.full.min.js"></script>
+    <!-- Page specific script -->
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2({
+                theme: 'bootstrap4'
+            });
+
+            var roles = @Html.Raw(Json.Encode(Model.Roles));
+            $('.select2').val(roles);
+            $('.select2').trigger('change');
+        })
+    </script>
+}

@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNKRS - Trang Chủ</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #1877F2;
+            --secondary-gray: #F0F2F5;
+            --text-gray: #555;
+            --border-color: #ddd;
+            --hover-shadow: rgba(0, 0, 0, 0.1);
+            --white: #fff;
+            --light-gray: #e9eff1;
+        }
+
+        body {
+            background-image: url('@Url.Content("~/Content/Images/HomeBG.jpg")');
+
+            background-size: cover; /* Ảnh sẽ phủ kín màn hình */
+            background-repeat: no-repeat; /* Không lặp lại ảnh */
+            background-position: center; /* Ảnh được căn giữa */
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000; /* Đặt màu chữ để đảm bảo dễ đọc */
+        }
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('path/to/your/image.jpg'); /* Đường dẫn tới ảnh nền */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 0.5; /* Đặt độ trong suốt */
+                z-index: -1; /* Đẩy lớp phủ ra phía sau nội dung */
+            }
+
+        .container {
+            position: relative; /* Nội dung bên trên ảnh nền */
+            z-index: 1; /* Đảm bảo nội dung hiển thị phía trên lớp phủ */
+            color: #000; /* Đặt màu chữ dễ đọc */
+        }
+        .fb-post {
+            max-width: 800px; /* Kích thước tối đa của thẻ div */
+            width: 100%; /* Tự động scale theo màn hình */
+            padding: 16px;
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px auto; /* Căn giữa và tạo khoảng cách giữa các bài viết */
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
+        }
+
+        .fb-post-image img {
+            width: 100%; /* Chiều rộng đầy đủ của khung chứa */
+            max-height: 500px; /* Chiều cao tối đa của ảnh */
+            object-fit: contain; /* Scale ảnh để phù hợp mà không cắt */
+            object-position: top; /* Giữ phần trên của ảnh */
+            border-radius: 8px; /* Bo góc ảnh */
+        }
+
+
+
+            .fb-post:hover {
+                box-shadow: 0 6px 18px var(--hover-shadow);
+                transform: translateY(-5px);
+            }
+
+        .fb-post-header {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .fb-user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 12px;
+        }
+
+        .fb-user-name h5 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        .fb-post-body {
+            padding: 16px;
+        }
+
+        .fb-description {
+            color: var(--text-gray);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .fb-post-image img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            object-position: top; /* Cắt lấy phần trên của ảnh */
+            border-radius: 8px;
+        }
+
+        .fb-post-actions {
+            display: flex;
+            justify-content: space-around;
+            padding: 12px;
+            border-top: 1px solid var(--border-color);
+            background-color: #f8f9fa;
+            font-size: 14px;
+        }
+
+            .fb-post-actions div {
+                cursor: pointer;
+                color: var(--text-gray);
+                transition: color 0.3s;
+            }
+
+                .fb-post-actions div:hover {
+                    color: var(--primary-blue);
+                }
+
+        .comments-section {
+            padding: 12px;
+            background-color: #f8f9fa;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .comments-list {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+
+        .comment-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+            .comment-item img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 12px;
+                object-fit: cover;
+            }
+
+            .comment-item p {
+                background-color: #e4e6eb;
+                padding: 8px 12px;
+                border-radius: 18px;
+                margin: 0;
+                position: relative;
+                flex-grow: 1;
+                max-width: calc(100% - 52px);
+            }
+
+            .comment-item em {
+                font-size: 12px;
+                color: #888;
+                margin-top: 5px;
+            }
+
+        .reply-btn {
+            display: inline-block;
+            color: var(--primary-blue);
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .reply-form {
+            display: none;
+            margin-top: 10px;
+        }
+
+            .reply-form textarea {
+                resize: none;
+                margin-bottom: 10px;
+            }
+
+        .navbar-nav.ms-auto {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .fb-post:not(:first-child) {
+            margin-top: 20px; /* Tăng khoảng cách giữa các bài đăng */
+        }
+        /* CSS cho lớp phủ */
+        .image-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+            .image-modal img {
+                max-width: 90%;
+                max-height: 90%;
+                object-fit: contain;
+                cursor: zoom-in;
+                transition: transform 0.3s ease;
+            }
+
+                .image-modal img.zoomed {
+                    cursor: zoom-out;
+                    transform: scale(2);
+                }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            z-index: 10000;
+        }
+        .title-heading {
+            color: #fff; /* Màu trắng */
+            font-size: 3.5rem; /* Tăng kích thước chữ */
+            font-weight: bold; /* Làm chữ đậm hơn */
+            text-transform: uppercase; /* Chuyển thành chữ in hoa */
+            margin-bottom: 30px; /* Khoảng cách dưới tiêu đề */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container py-4">
+        <section>
+            <h1 class="text-center mb-4 title-heading">Bảng Tin Hôm Nay</h1>
+
+            <div class="chat-button ms-2 mb-4">
+                <a href="@Url.Action("Index1", "Chat")" class="btn btn-primary">
+                    <i class="fas fa-robot"></i> Trò chuyện với AI
+                </a>
+            </div>
+            <div id="imageModal" class="image-modal" style="display: none;">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <img id="modalImage" src="" alt="Full Image">
+            </div>
+            <div class="container">
+                @foreach (var post in Model.Portfolios)
+                {
+                    <div class="fb-post" id="post-@post.Id">
+                        <div class="fb-post-header">
+                            <img src="@post.Image" class="fb-user-avatar" alt="User Avatar" loading="lazy">
+                            <div class="fb-user-name">
+                                <h5>@post.Name</h5>
+                            </div>
+                        </div>
+                        <div class="fb-post-body">
+                            @if (!string.IsNullOrEmpty(post.Description))
+                            {
+                                <p class="fb-description">@Html.Raw(post.Description)</p>
+                            }
+                        </div>
+                        @if (!string.IsNullOrEmpty(post.Image))
+                        {
+                            <div class="fb-post-image">
+                                <img src="@post.Image" alt="Post Image" loading="lazy" onclick="openModal('@post.Image')">
+                            </div>
+
+                        }
+                        <div class="fb-post-actions">
+                            <div class="like-btn" onclick="likePost(@post.Id)">👍 Thích <span id="like-count-@post.Id">@post.LikeCount</span></div>
+                            <div class="comment-btn" onclick="toggleComments(@post.Id)">
+                                💬 Bình luận <span id="comment-count-@post.Id">@post.CommentCount</span>
+                            </div>
+                            <div class="share-btn">🔄 Chia sẻ</div>
+                        </div>
+                        <div class="comments-section" id="comments-@post.Id" style="display:none;">
+                            <input type="text" id="comment-input-@post.Id" class="form-control" placeholder="Viết bình luận..." />
+                            <button class="btn btn-primary btn-sm" onclick="commentPost(@post.Id)">Gửi</button>
+                            <div id="comments-list-@post.Id" class="comments-list"></div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function likePost(postId) {
+            $.post("/Post/LikePost", { postId: postId }, function (response) {
+                if (response.status === "success") {
+                    $("#like-count-" + postId).text(response.likeCount);
+                }
+            });
+        }
+
+        function toggleComments(postId) {
+            var commentsSection = $("#comments-" + postId);
+            commentsSection.toggle();
+            if (commentsSection.is(":visible")) {
+                loadComments(postId);
+            }
+        }
+
+        function commentPost(postId) {
+            var commentText = $("#comment-input-" + postId).val();
+            if (commentText.trim() === "") {
+                alert("Vui lòng nhập bình luận.");
+                return;
+            }
+
+            $.post("/Post/CommentPost", { postId: postId, commentText: commentText }, function (response) {
+                if (response.status === "success") {
+                    $("#comment-count-" + postId).text(response.commentCount);
+                    loadComments(postId);
+                    $("#comment-input-" + postId).val('');
+                } else {
+                    alert("Có lỗi xảy ra khi gửi bình luận.");
+                }
+            });
+        }
+
+        function loadComments(postId) {
+            $.get("/Post/GetComments", { postId: postId }, function (comments) {
+                var commentsHtml = comments.map(function (comment) {
+                    return `
+                                <div class="comment-item">
+                                    <img src="${comment.ProfileImage}" alt="User">
+                                    <p>
+                                        <strong>${comment.UserName}:</strong> ${comment.Text}
+                                        <em>${comment.CreatedAt}</em>
+                                    </p>
+                                </div>
+                            `;
+                }).join('');
+                $("#comments-list-" + postId).html(commentsHtml);
+            });
+        }
+
+        $(document).ready(function () {
+            $(".fb-post").each(function () {
+                var postId = $(this).attr("id").replace("post-", "");
+                loadComments(postId);
+            });
+        });
+    </script>
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+
+        // Xử lý zoom in/zoom out
+        document.getElementById('modalImage').addEventListener('click', function () {
+            this.classList.toggle('zoomed');
+        });
+    </script>
+
+</body>
+
+</html>

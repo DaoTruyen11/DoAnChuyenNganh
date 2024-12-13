@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Friendship Requests";
+}
+
+<h2>Friendship Requests</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<ul>
+    @foreach (var request in ViewBag.FriendshipRequests as IEnumerable<Friendship>)
+    {
+        <li>
+            @request.User.UserName wants to be your friend.
+
+            <!-- Chấp nhận yêu cầu -->
+            <form method="post" action="@Url.Action("AcceptRequest", "Friendship")">
+                <input type="hidden" name="id" value="@request.Id" />
+                <button type="submit" class="btn btn-success btn-sm">Accept</button>
+            </form>
+
+            <!-- Từ chối yêu cầu -->
+            <form method="post" action="@Url.Action("RejectRequest", "Friendship")">
+                <input type="hidden" name="id" value="@request.Id" />
+                <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+            </form>
+        </li>
+    }
+</ul>

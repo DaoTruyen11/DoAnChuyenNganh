@@ -1,0 +1,394 @@
+﻿@model SNKRS.ViewModels.PortfolioViewModel
+
+@{
+    ViewBag.Active = "Portfolio";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section CustomHead {
+    <!-- Required CSS -->
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <style>
+        .portfolio-header {
+            background: linear-gradient(135deg, #4a90e2, #67b26f);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-card {
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .form-card:hover {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            padding: 0.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-custom {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-custom-primary {
+            background: #4a90e2;
+            border: none;
+            color: white;
+        }
+
+        .btn-custom-primary:hover {
+            background: #357abd;
+            transform: translateY(-2px);
+        }
+
+        .btn-custom-success {
+            background: #67b26f;
+            border: none;
+            color: white;
+        }
+
+        .btn-custom-success:hover {
+            background: #4e9656;
+            transform: translateY(-2px);
+        }
+
+        .image-upload-container {
+            border: 2px dashed #e9ecef;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .image-upload-container:hover {
+            border-color: #4a90e2;
+            background: #fff;
+        }
+
+        .preview-image {
+            border-radius: 8px;
+            margin: 1rem 0;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .status-toggle-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.5rem 0;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 48px;
+            height: 24px;
+            margin: 0;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #e9ecef;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #67b26f;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #67b26f;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(24px);
+        }
+
+        .toggle-label {
+            font-size: 0.9rem;
+            color: #495057;
+            margin: 0;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .select2-container--bootstrap4 .select2-selection--multiple {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 0.5rem;
+        }
+
+        .validation-message {
+            font-size: 0.875rem;
+            color: #dc3545;
+            margin-top: 0.25rem;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+        }
+
+        
+    </style>
+}
+
+@using (Html.BeginForm("Create", "Portfolio", FormMethod.Post, new { @class = "portfolio-form", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="portfolio-header">
+        <h1 class="mb-0">Thêm Portfolio Mới</h1>
+        <p class="mb-0 mt-2 opacity-75">Tạo một portfolio mới với thông tin chi tiết bên dưới</p>
+    </div>
+
+    <div class="mb-4">
+        <a href="@Url.Action("Index", "Portfolio")" class="btn btn-custom btn-custom-primary">
+            <i class="fas fa-arrow-left"></i>
+            <span>Quay lại danh sách</span>
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="card form-card mb-4">
+                <div class="card-body p-4">
+                    <div class="form-group mb-4">
+                        @Html.LabelFor(model => model.Name, "Tên Portfolio", new { @class = "form-label" })
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Nhập tên portfolio" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "validation-message" })
+                    </div>
+
+                    <div class="form-group mb-4">
+                        @Html.LabelFor(model => model.Categories, "Danh mục", new { @class = "form-label" })
+                        @Html.DropDownListFor(model => model.ProductCategories, new SelectList(Model.Categories, "Id", "Name"),
+                            new { @class = "form-control select2", @multiple = "multiple", data_placeholder = "Chọn danh mục" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Description, "Mô tả chi tiết", new { @class = "form-label" })
+                        @Html.TextAreaFor(model => model.Description, new { @rows = "10", @class = "form-control", @id = "summernote" })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "validation-message" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card form-card mb-4">
+                <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Trạng thái hiển thị</h5>
+                    <label class="toggle-label" for="toggleVisibility" style="display: flex; flex-direction: column; align-items: flex-start;">
+                        @Html.CheckBoxFor(model => model.isVisible)
+                        
+                    </label>
+                </div>
+            </div>
+            <div class="card form-card">
+                <div class="card-body p-4">
+
+                    <h5 class="card-title mb-3">Hình ảnh đại diện</h5>
+                    <div class="image-upload-container">
+                        @Html.HiddenFor(model => model.Image)
+                        <img id="image" src="https://res.cloudinary.com/phucsme/image/upload/v1649076069/a6d934de-86d9-4b3b-8626-48465c4b9aa8_cfnhfg.png"
+                             class="preview-image" alt="Preview">
+                        <input type="file" id="file" accept="image/*" hidden />
+                        @Html.ValidationMessageFor(model => model.Image, "", new { @class = "validation-message" })
+                        <button class="btn btn-custom btn-custom-primary mt-2 w-100" type="button" onclick="selectImage()" id="selectButton">
+                            <i class="fas fa-upload"></i>
+                            <span>Chọn ảnh</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div class="text-end mt-4">
+        <button type="submit" class="btn btn-custom btn-custom-success">
+            <i class="fas fa-save"></i>
+            <span>Lưu Portfolio</span>
+        </button>
+    </div>
+}
+
+@section CustomScript {
+    <script src="~/Content/AdminLTE/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="~/Content/AdminLTE/plugins/select2/js/select2.full.min.js"></script>
+    <script>
+        $(function () {
+            // Initialize Select2
+            $('.select2').select2({
+                theme: 'bootstrap4',
+                placeholder: 'Chọn danh mục',
+                allowClear: true,
+                width: '100%'
+            });
+
+            // Initialize Summernote
+            $('#summernote').summernote({
+                height: 300,
+                toolbar: [
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']]
+                ],
+                callbacks: {
+                    onImageUpload: function (files) {
+                        // Handle image upload if needed
+                    }
+                }
+            });
+        });
+
+        function selectImage() {
+            $("#file").trigger("click");
+        }
+
+        $("#file").change(function () {
+            if (window.FormData !== undefined) {
+                var fileUpload = $("#file").get(0);
+                var files = fileUpload.files;
+                var formData = new FormData();
+                var image = files[0];
+
+                if (!image) return;
+
+                // Update button state
+                $("#selectButton").html(`
+                        <span class="loading-spinner mr-2"></span>
+                        <span>Đang tải...</span>
+                    `);
+                $("#selectButton").prop('disabled', true);
+
+                const CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/phucsme/image/upload";
+                const CLOUDINARY_UPLOAD_PRESET = "m6mqoibs";
+
+                formData.append('file', image);
+                formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
+
+                $.ajax({
+                    type: "POST",
+                    url: CLOUDINARY_URL,
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+                    success: function (res) {
+                        $("#image").attr("src", res.url);
+                        $("#Image").val(res.url);
+
+                        // Show success state
+                        $("#selectButton").html(`
+                                <i class="fas fa-check"></i>
+                                <span>Đã tải lên</span>
+                            `);
+                        $("#selectButton").prop('disabled', false);
+
+                        // Reset button after 3 seconds
+                        setTimeout(() => {
+                            $("#selectButton").html(`
+                                    <i class="fas fa-upload"></i>
+                                    <span>Chọn ảnh</span>
+                                `);
+                        }, 3000);
+                    },
+                    error: function (e) {
+                        console.error('Upload error:', e);
+                        alert('Có lỗi xảy ra khi tải ảnh lên. Vui lòng thử lại.');
+
+                        // Reset button
+                        $("#selectButton").html(`
+                                <i class="fas fa-upload"></i>
+                                <span>Chọn ảnh</span>
+                            `);
+                        $("#selectButton").prop('disabled', false);
+                    }
+                });
+            }
+        });
+
+        // Form validation
+        $('.portfolio-form').on('submit', function (e) {
+            var isValid = true;
+
+            // Check required fields
+            if (!$('#Name').val()) {
+                $('#Name').addClass('is-invalid');
+                isValid = false;
+            }
+
+            if (!$('#Image').val()) {
+                $('.image-upload-container').addClass('border-danger');
+                isValid = false;
+            }
+
+            if (!isValid) {
+                e.preventDefault();
+                alert('Vui lòng điền đầy đủ thông tin bắt buộc');
+            }
+        });
+    </script>
+}

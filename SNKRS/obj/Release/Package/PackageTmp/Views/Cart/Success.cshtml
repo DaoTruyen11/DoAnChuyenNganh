@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Success";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container min-vh-100">
+    <div data-reflow-type="shopping-cart">
+        <div class="reflow-shopping-cart">
+            <div class="ref-loading-overlay"></div>
+            @if (ViewBag.Id != null)
+            {
+                <div class="ref-message" style="display: block;">Your order has been placed successfully!!<br /> Order Id: <b>#@ViewBag.Id</b></div>
+            }
+            else
+            {
+            }
+        </div>
+    </div>
+</div>

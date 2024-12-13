@@ -1,0 +1,208 @@
+﻿@model SNKRS.ViewModels.ProductViewModel
+
+@{
+    ViewBag.Title = Model.Product.Name;
+}
+<div class="container">
+    <div data-reflow-type="product" data-reflow-product="548179365">
+        <div class="reflow-product">
+            <div class="ref-media">
+                <div class="ref-preview"><img class="ref-image active" src="@Model.Product.Image" id="image" data-reflow-preview-type="image" /></div>
+                <div class="ref-thumbnails">
+                    @foreach (var item in Model.Product.ProductGalleries)
+                    {
+                        <div class="ref-thumbnail">
+                            <div class="ref-image" data-reflow-preview-type="image" data-reflow-preview="undefined" style="background-image: url(@item.Src);"></div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="ref-product-data">
+                <h2 class="ref-name">@Model.Product.Name</h2>
+                <div class="ref-description">
+                    @Html.Raw(Model.Product.Description)
+                </div>
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    @foreach (var item in Model.ProductSizes)
+                    {
+                        <li class="nav-item" style="margin-right: 10px" role="presentation">
+                            <button class="nav-link border @(item.Quantity == 0 ? "disabled" : "")" id="pills-home-tab" ProductSizeId="@item.Id" data-bs-toggle="pill" data-bs-target="#pills-@item.Size.Replace(" ", "-")" type="button" role="tab" aria-controls="pills-@item.Size.Replace(" ", "-")" aria-selected="false">@item.Size</button>
+                        </li>
+                    }
+                </ul>
+                <div class="tab-content mb-3" id="pills-tabContent">
+                    @foreach (var item in Model.ProductSizes)
+                    {
+                        <div class="tab-pane fade" id="pills-@item.Size.Replace(" ", "-")" role="tabpanel" aria-labelledby="pills-@item.Size.Replace(" ", "-")">@item.Quantity products in stock.</div>
+                    }
+                </div>
+                @if (Model.Product.SalePrice > 0)
+                {
+                    <h4 class="text-decoration-line-through text-muted">@String.Format("{0:#,##0}", Model.Product.Price)</h4>
+                }
+                <h3 class="ref-price">@String.Format("{0:#,##0}", Model.Product.SalePrice) <u>đ</u></h3>
+                <span data-reflow-type="add-to-cart" data-reflow-product="548179365">
+                    <div class="ref-product-controls">
+                        <div class="ref-quantity-widget">
+                            <div class="ref-decrease">-</div>
+                            <input type="text" value="1" />
+                            <div class="ref-increase">+</div>
+                        </div>
+                        <a href="#" class="ref-button">Add to Cart</a>
+                    </div>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="container">
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h1 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h3>Reviews</h3>
+                    </button>
+                </h1>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <div class="form-group mb-3">
+                                <textarea class="form-control" id="review-content" rows="3" placeholder="Write your review..."></textarea>
+                            </div>
+                            <div class="form-group mb-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                    <option value="4">⭐⭐⭐⭐</option>
+                                    <option value="3">⭐⭐⭐</option>
+                                    <option value="2">⭐⭐</option>
+                                    <option value="1">⭐</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <button class="btn btn-success" id="review-button">Review</button>
+                            </div>
+                        }
+
+                        <div id="Reviews">
+                            @foreach (var item in Model.Reviews)
+                            {
+                                <div class="form-group mb-3">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <img class="rounded" width="50" src="https://i.stack.imgur.com/frlIf.png" alt="...">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    @(new string('⭐', item.Rating))<br />
+                                                    <b>@item.Content</b><br />
+                                                    @item.DateTime
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success" type="button">Load more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h1 class="py-3">Related Products</h1>
+        <div class="reflow-product-list ref-cards">
+            <div class="ref-products">
+                @foreach (var item in Model.RelatedProducts)
+                {
+                    <a class="ref-product" href="@Url.Action("Details", "Product", new { id = item.Id })">
+                        <img class="ref-image" src="@item.Image" loading="lazy">
+                        <div class="ref-product-data">
+                            <div class="ref-product-info">
+                                <h5 class="ref-name">@item.Name</h5>
+                            </div>
+                            <p class="ref-price">@String.Format("{0:#,##0}", item.Price) <u>đ</u></p>
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+@section scripts {
+    <script>
+        $("#review-button").click(function () {
+            var Id = @Model.Product.Id;
+            var Rating = $(".form-select").val();
+            var content = $("#review-content").val();
+            var data = { Id: Id, Content: content, Rating: Rating };
+            $.ajax({
+                url: "@Url.Action("AddReview", "Product")",
+                data: data,
+                success: function (res) {
+                    $("#Reviews").prepend(`<div class="form-group mb-3"> <div class="card mb-3"> <div class="card-body"> <div class="d-flex align-items-center"> <div class="flex-shrink-0"> <img class="rounded" width="50" src="https://i.stack.imgur.com/frlIf.png" alt="..."> </div> <div class="flex-grow-1 ms-3"> ${"⭐".repeat(Rating)} <br /> ${content} </div> </div> </div> </div> </div>`);
+                },
+                error: function () {
+                    alert("Something went wrong!")
+                }
+            })
+        });
+        $(".ref-thumbnail").click(function () {
+            var url = $(this).children("div").css("background-image");
+            url = url.replace('url("', '');
+            url = url.replace('")', '');
+            console.log(url);
+            $("#image").attr("src", url);
+        });
+
+        $(".ref-increase").click(function () {
+            var input = $(".ref-quantity-widget input");
+            input.val(parseInt(input.val()) + 1);
+        })
+
+        $(".ref-decrease").click(function () {
+            var input = $(".ref-quantity-widget input");
+            if (parseInt(input.val()) - 1 >= 0) input.val(parseInt(input.val()) - 1);
+        })
+
+        $(".ref-button").click(function () {
+            var productSizeId = $(".nav-link.border.active").attr("productsizeid");
+            if (productSizeId != undefined) {
+                var quantity = $(".ref-quantity-widget input").val();
+                var data = { Id: productSizeId, Quantity: quantity };
+                $.ajax({
+                    url: "@Url.Action("Add", "Cart")",
+                    data: data,
+                    success: function (res) {
+                        $.ajax({
+                            url: "@Url.Action("GetCartAmount", "Cart")",
+                            success: function (res) {
+                                $("#cart-amount").text(res);
+                            }
+                        })
+                    },
+                    error: function (e) {
+                        alert(e.statusText);
+                    }
+                });
+            } else {
+                alert("Please choose a size");
+            }
+
+        });
+    </script>
+}

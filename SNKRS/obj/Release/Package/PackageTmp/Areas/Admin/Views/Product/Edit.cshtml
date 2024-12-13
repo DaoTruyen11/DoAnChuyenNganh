@@ -1,0 +1,299 @@
+﻿@model SNKRS.Areas.Admin.ViewModels.ProductViewModel
+
+@{
+    ViewBag.Title = "Edit product";
+    ViewBag.Active = "Products";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section CustomHead {
+    <!-- summernote -->
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/summernote/summernote-bs4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.6/dist/sweetalert2.min.css">
+}
+@using (Html.BeginForm("Edit", "Product"))
+{
+    @Html.AntiForgeryToken()
+    <div class="mb-3 text-left">
+        <a href="@Url.Action("Index", "Product")" class="btn btn-primary">Back to list</a>
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="card">
+                <div class="card-body">
+                    @Html.HiddenFor(model => model.Id)
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name)
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Price)
+                        @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SalePrice)
+                        @Html.EditorFor(model => model.SalePrice, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Description)
+                        @Html.TextAreaFor(model => model.Description, new { @rows = "10", @class = "form-control", @id = "summernote" })
+                    </div>
+
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-info">Save</button>
+                </div>
+            </div>
+
+
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            <a class="d-block w-100" data-toggle="collapse" href="#collapse" style="color: black">
+                                Product Sizes
+                            </a>
+                            <button type="button" class="btn btn-success" id="AddSize">Add Size</button>
+                        </h4>
+                    </div>
+                    <div id="collapse" class="collapse show" data-parent="#accordion">
+                        <div class="card-body" id="Sizes">
+                            @foreach (var item in Model.ProductSizes)
+                            {
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@item.Size</span>
+                                    </div>
+                                    <input type="number" class="form-control" value="@item.Quantity">
+                                    <button type="button" class="ml-3 btn btn-primary" onclick="DeleteSize(@item.Id)"><i class="fa-solid fa-arrows-rotate"></i></button>
+                                    <button type="button" class="ml-3 btn btn-danger" onclick="DeleteSize(@item.Id)"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    @Html.LabelFor(model => model.isVisible)
+                    <br />
+                    @Html.CheckBoxFor(model => model.isVisible)
+                    <span>Is Visible</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Image)
+                        @Html.EditorFor(model => model.Image, new { htmlAttributes = new { @hidden = "true" } })
+                        <img id="image" src="@Model.Image" class="img-thumbnail" width="100%">
+                        <input type="file" id="file" accept="image/*" hidden />
+                        <button class="btn btn-primary mt-3" type="button" onclick="selectImage()" id="selectButton">Select</button>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Categories)
+                        @Html.DropDownListFor(model => model.ProductCategories, new SelectList(Model.Categories, "Id", "Name"), new { @class = "form-control select2", @multiple = "multiple" })
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <label>Product Galleries</label>
+                    <div class="form-group">
+                        <div class="d-flex flex-wrap" id="Galleries">
+                            @foreach (var item in Model.ProductGalleries)
+                            {
+                                <div><img width="100px" id="image" src="@item.Src" class="img-thumbnail mr-3 mb-3" width="100%"></div>
+                            }
+                        </div>
+                    </div>
+                    <input type="file" id="gallery" accept="image/*" hidden />
+                    <button class="btn btn-primary mt-3" type="button" onclick="addGallery()" id="addGalleryButton">Add</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+}
+
+@section CustomScript {
+    <!-- Summernote -->
+    <script src="~/Content/AdminLTE/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- Select2 -->
+    <script src="~/Content/AdminLTE/plugins/select2/js/select2.full.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.6/dist/sweetalert2.min.js"></script>
+    <!-- Page specific script -->
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2({
+                theme: 'bootstrap4'
+            });
+
+            // Summernote
+            $('#summernote').summernote({
+                height: 200,
+            });
+
+            var categories = @Html.Raw(Json.Encode(Model.ProductCategories));
+            $('.select2').val(categories);
+            $('.select2').trigger('change');
+        })
+
+
+
+        function selectImage() {
+            $("#file").trigger("click");
+        }
+
+        var Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+        });
+
+        function addGallery() {
+            $("#gallery").trigger("click");
+        }
+
+        $("#gallery").change(function () {
+            if (window.FormData != undefined) {
+                var fileUpload = $("#gallery").get(0);
+                var files = fileUpload.files;
+                var formData = new FormData();
+                var image = files[0];
+                console.log(image);
+                $("#addGalleryButton").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class= "visually-hidden"> Uploading...</span >');
+                const CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/phucsme/image/upload";
+                const CLOUDINARY_UPLOAD_PRESET = "m6mqoibs";
+                formData.append('file', image);
+                formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
+                $.ajax({
+                    type: "POST",
+                    url: CLOUDINARY_URL,
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+                    success: function (res) {
+                        var data = { Id: parseInt($("#Id").val()), Src: res.url };
+                        $.ajax({
+                            url: "@Url.Action("AddGallery", "Product")",
+                            data: data,
+                        });
+                        $("#Galleries").append(`<div><img width="100px" id="image" src="${res.url}" class="img-thumbnail mr-3 mb-3" width="100%"></div>`);
+
+                        $("#addGalleryButton").html("Add");
+                    },
+                    error: function (e) {
+                        alert(e.statusText);
+                    }
+                });
+            }
+        })
+
+        function DeleteSize(Id) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: "@Url.Action("DeleteSize", "Product", new {Area = "Admin"})/" + Id,
+                    }).done(function () {
+                        $('button[onclick="DeleteSize(' + Id + ')"]').parent('div').remove();
+                        Toast.fire({
+                            icon: 'success',
+                            title: 'Your file has been deleted.'
+                        })
+                    });
+                }
+            })
+        }
+
+        $("#file").change(function () {
+            if (window.FormData != undefined) {
+                var fileUpload = $("#file").get(0);
+                var files = fileUpload.files;
+                var formData = new FormData();
+                var image = files[0];
+                console.log(image);
+                $("#selectButton").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class= "visually-hidden"> Uploading...</span >');
+                const CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/phucsme/image/upload";
+                const CLOUDINARY_UPLOAD_PRESET = "m6mqoibs";
+                formData.append('file', image);
+                formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
+                $.ajax({
+                    type: "POST",
+                    url: CLOUDINARY_URL,
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+                    success: function (res) {
+                        $("#image").attr("src", res.url);
+                        $("#Image").val(res.url);
+                        $("#selectButton").html("Select");
+                    },
+                    error: function (e) {
+                        alert(e.statusText);
+                    }
+                });
+            }
+        })
+
+        $("#AddSize").click(function () {
+            Swal.fire({
+                title: 'Add Size',
+                html: `<input type="text" id="Size" class="swal2-input" placeholder="Size">
+                        <input type="number" id="Quantity" class="swal2-input" placeholder="Quantity">`,
+                confirmButtonText: 'Save',
+                preConfirm: () => {
+                    const productId = @Model.Id;
+                    const size = Swal.getPopup().querySelector('#Size').value
+                    const quantity = Swal.getPopup().querySelector('#Quantity').value
+                    if (!size || !quantity) {
+                        Swal.showValidationMessage(`Please enter Size and Quantity`)
+                    }
+                    return { productId: productId, size: size, quantity: quantity }
+                }
+            }).then((result) => {
+                var formData = new FormData();
+                formData.append("productId", result.value.productId);
+                formData.append("size", result.value.size);
+                formData.append("quantity", result.value.quantity);
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("AddSize", "Product", new {Area = "Admin"})",
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+                    success: function (res) {
+                        $("#Sizes").append('<div class="input-group mb-3"><div class="input-group-prepend"><span class="input-group-text">' + res.Size + '</span></div><input type="number" class="form-control" value="' + res.Quantity + '"><button type="button" class="ml-3 btn btn-danger" onclick="DeleteSize(' + res.Id + ')"><i class="fas fa-trash"></i></button></div>');
+                    },
+                    error: function (e) {
+                        alert(e.statusText);
+                    }
+                });
+            })
+        })
+
+        $("#SaveSize").click(function () {
+            console.log($(this).parent());
+        });
+    </script>
+}

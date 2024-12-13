@@ -1,0 +1,365 @@
+﻿@{
+    ViewBag.Title = "Ây ai trợ giúp";
+}
+
+<h2 style="text-align: center; margin-top: 30px;">Ây ai trợ giúp 🤖🤖🤖</h2>
+
+<style>
+    div {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-image: url('@Url.Content("~/Content/Images/backgroundAI.jpg")');
+    background-size: cover; /* Tự động căn chỉnh kích thước */
+    background-position: center; /* Căn giữa ảnh nền */
+    background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+    background-attachment: fixed; /* Ảnh nền cố định khi cuộn */
+    margin: 0;
+    padding: 0;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .drop-area {
+        border: 2px dashed #ccc;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+        .drop-area img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .drop-area p {
+            margin: 0;
+        }
+
+        .drop-area:hover {
+            border-color: #007BFF;
+        }
+    textarea {
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 90%;
+        resize: none;
+        padding: 10px;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+
+    .messages-container {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding: 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .message {
+        max-width: 85%;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        word-wrap: break-word;
+    }
+
+    .user-message {
+        background-color: #4285F4;
+        color: white;
+        align-self: flex-end;
+        margin-left: auto;
+    }
+
+    .gemini-message {
+        background-color: #F1F3F4;
+        color: #202124;
+        align-self: flex-start;
+        margin-right: auto;
+    }
+
+    .markdown-content {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+            color: #202124;
+            margin: 10px 0;
+        }
+
+        .markdown-content p {
+            margin: 5px 0;
+        }
+
+        .markdown-content ul, .markdown-content ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .markdown-content a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+
+            .markdown-content a:hover {
+                text-decoration: underline;
+            }
+
+        .markdown-content code {
+            background-color: #F1F3F4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+</style>
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 20px;">
+
+    <!-- Ô 1: Chọn hoặc kéo thả tệp -->
+    <div style="border: 2px solid black; border-radius: 10px; padding: 10px; height: 500px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+        <form action="/OCR/ExtractText" method="post" enctype="multipart/form-data" style="width: 100%; height: 100%;" id="uploadForm">
+            <label class="drop-area" for="file" id="dropArea">
+                @if (ViewBag.UploadedImagePath != null)
+                {
+                    <img src="@Url.Content(ViewBag.UploadedImagePath)" alt="Hình ảnh đã tải lên" />
+                }
+                else
+                {
+                    <p>Nhấn để chọn tệp hoặc kéo thả tệp vào đây</p>
+                }
+                <input type="file" name="file" id="file" accept=".jpg,.jpeg,.png,.pdf" onchange="submitForm()" />
+            </label>
+        </form>
+    </div>
+
+    <!-- Ô 2: Hiển thị kết quả OCR (cho phép chỉnh sửa) -->
+    <div style="border: 2px solid black; border-radius: 10px; padding: 10px; height: 500px; overflow-y: auto;">
+        <h3>Kết quả</h3>
+        @if (ViewBag.ExtractedText != null)
+        {
+            <!-- Sử dụng <textarea> thay vì <pre> để cho phép chỉnh sửa -->
+            <textarea id="extractedText" style="width: 100%; height: 90%; border: none; resize: none; font-size: 14px; padding: 10px; line-height: 1.5;">@ViewBag.ExtractedText</textarea>
+        }
+        else
+        {
+            <!-- Vẫn hiển thị thông báo nếu không có nội dung -->
+            <textarea id="extractedText" style="width: 100%; height: 90%; border: none; resize: none; font-size: 14px; padding: 10px; line-height: 1.5;" placeholder="Chưa có kết quả."></textarea>
+        }
+    </div>
+
+
+    <!-- Ô 4: Giao diện chat -->
+    <div style="grid-column: span 2; border: 2px solid black; border-radius: 10px; padding: 10px; height: 500px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="chat-header">
+            <h2>Chat với AI</h2>
+        </div>
+
+        <div id="responseContainer" class="messages-container">
+            <!-- Tin nhắn sẽ được thêm động -->
+        </div>
+
+        <div class="input-container" style="display: flex; padding: 10px; gap: 10px; border-top: 1px solid #E0E0E0;">
+            <textarea id="userMessage" placeholder="Nhập tin nhắn..." style="flex-grow: 1; padding: 10px; border: 1px solid #ccc; border-radius: 8px; resize: none;"></textarea>
+            <button class="send-button" onclick="sendMessage()" style="background-color: #4285F4; color: white; border: none; border-radius: 8px; padding: 10px 20px; cursor: pointer;">
+                Gửi
+            </button>
+            <button class="send-button" onclick="sendSuggestEdit()" style="background-color: #34A853; color: white; border: none; border-radius: 8px; padding: 10px 20px; cursor: pointer;">
+                Gợi ý chỉnh sửa AI
+            </button>
+        </div>
+    </div>
+
+</div>
+
+@if (ViewBag.Error != null)
+{
+    <h3 style="color:red; text-align: center;">@ViewBag.Error</h3>
+}
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    function renderMarkdownToHTML(markdownText) {
+        return marked.parse(markdownText);
+    }
+</script>
+<script>
+    function sendMessage() {
+    const messageInput = document.getElementById("userMessage");
+    const responseContainer = document.getElementById("responseContainer");
+
+    if (!messageInput || !responseContainer) {
+        alert('Không tìm thấy các phần tử cần thiết trong giao diện.');
+        return;
+    }
+
+    const message = messageInput.value.trim();
+    if (!message) {
+        alert('Vui lòng nhập tin nhắn trước khi gửi.');
+        return;
+    }
+
+    // Thêm tin nhắn người dùng vào giao diện
+    const userMessageHtml = `<div class="message user-message" style="background-color: #4285F4; color: white; padding: 10px 15px; border-radius: 8px; margin-bottom: 10px; align-self: flex-end;">${message}</div>`;
+    responseContainer.innerHTML += userMessageHtml;
+    responseContainer.scrollTop = responseContainer.scrollHeight;
+
+    // Gửi tin nhắn đến server
+    fetch('@Url.Action("SendToGemini", "Chat")', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `userMessage=${encodeURIComponent(message)}`
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                const markdownHTML = renderMarkdownToHTML(data.response); // Chuyển đổi Markdown thành HTML
+                const geminiMessageHtml = `<div class="message gemini-message markdown-content" style="background-color: #F1F3F4; color: #202124; padding: 10px 15px; border-radius: 8px; margin-bottom: 10px; align-self: flex-start;">${markdownHTML}</div>`;
+                responseContainer.innerHTML += geminiMessageHtml;
+                responseContainer.scrollTop = responseContainer.scrollHeight;
+            } else {
+                alert(`Lỗi từ server: ${data.message}`);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Đã xảy ra lỗi khi gửi tin nhắn.');
+        });
+
+    // Xóa nội dung trong ô nhập sau khi gửi
+    messageInput.value = '';
+}
+function sendSuggestEdit() {
+    const extractedTextElement = document.getElementById("extractedText");
+    const responseContainer = document.getElementById("responseContainer");
+
+    if (!extractedTextElement || !responseContainer) {
+        alert("Không tìm thấy các phần tử cần thiết trong giao diện.");
+        return;
+    }
+
+    // Lấy nội dung từ <textarea>
+    const extractedText = extractedTextElement.value.trim();
+
+    if (!extractedText || extractedText === "Chưa có kết quả.") {
+        alert("Chưa có nội dung CV để cải thiện.");
+        return;
+    }
+
+    // Tạo câu lệnh yêu cầu cải thiện CV
+    const message = `Hãy giúp tôi viết CV tốt hơn dựa trên nội dung sau:\n\n${extractedText}`;
+
+    // Thêm tin nhắn yêu cầu vào giao diện
+    const userMessageHtml = `<div class="message user-message" style="background-color: #4285F4; color: white; padding: 10px 15px; border-radius: 8px; margin-bottom: 10px; align-self: flex-end;">${message}</div>`;
+    responseContainer.innerHTML += userMessageHtml;
+    responseContainer.scrollTop = responseContainer.scrollHeight;
+
+    // Gửi yêu cầu đến server
+    fetch('@Url.Action("SendToGemini", "Chat")', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `userMessage=${encodeURIComponent(message)}`
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                const markdownHTML = renderMarkdownToHTML(data.response); // Chuyển đổi Markdown thành HTML
+                const geminiMessageHtml = `<div class="message gemini-message markdown-content" style="background-color: #F1F3F4; color: #202124; padding: 10px 15px; border-radius: 8px; margin-bottom: 10px; align-self: flex-start;">${markdownHTML}</div>`;
+                responseContainer.innerHTML += geminiMessageHtml;
+                responseContainer.scrollTop = responseContainer.scrollHeight;
+            } else {
+                alert(`Lỗi từ server: ${data.message}`);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Đã xảy ra lỗi khi gửi yêu cầu cải thiện CV.');
+        });
+}
+
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const dropArea = document.getElementById('dropArea');
+        const fileInput = document.getElementById('file');
+        const form = document.getElementById('uploadForm');
+
+        // Kiểm tra nếu các phần tử cần thiết tồn tại
+        if (!dropArea || !fileInput || !form) {
+            console.error('Không tìm thấy các phần tử Drop Area, File Input hoặc Form.');
+            return;
+        }
+
+        // Xử lý sự kiện kéo tệp vào
+        dropArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropArea.classList.add('hover'); // Thêm class khi kéo tệp vào
+        });
+
+        dropArea.addEventListener('dragleave', () => {
+            dropArea.classList.remove('hover'); // Loại bỏ class khi rời tệp
+        });
+
+        dropArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropArea.classList.remove('hover');
+            const files = e.dataTransfer.files;
+
+            if (files.length > 0) {
+                fileInput.files = files; // Đặt file vào input
+                form.submit(); // Gửi form tự động
+            }
+        });
+
+        // Xử lý khi chọn file trực tiếp qua input
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                form.submit(); // Gửi form khi chọn file
+            }
+        });
+    });
+
+
+</script>

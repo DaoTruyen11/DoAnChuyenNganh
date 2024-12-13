@@ -1,0 +1,481 @@
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\SNKRS.dll.config
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\SNKRS.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\SNKRS.pdb
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\csc.exe
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\csc.exe.config
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\csc.rsp
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\csi.exe
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\csi.exe.config
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\csi.rsp
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\System.Buffers.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\System.Memory.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\vbc.exe
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\vbc.exe.config
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\vbc.rsp
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\VBCSCompiler.exe
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Antlr3.Runtime.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\EntityFramework.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\EntityFramework.SqlServer.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Newtonsoft.Json.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Owin.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.Helpers.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.Mvc.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.Optimization.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.Razor.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.WebPages.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.WebPages.Razor.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\WebGrease.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Newtonsoft.Json.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.Helpers.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.Mvc.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.Optimization.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.Razor.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.WebPages.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\System.Web.WebPages.Razor.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Antlr3.Runtime.pdb
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\EntityFramework.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\EntityFramework.SqlServer.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.csproj.AssemblyReference.cache
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.csproj.CoreCompileInputs.cache
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.csproj.CopyComplete
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.pdb
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.InitialModel.resources
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.csproj.GenerateResource.cache
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddProductVisibility.resources
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\PagedList.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\PagedList.Mvc.dll
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\PagedList.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\bin\PagedList.Mvc.xml
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.ChangeProductCategoryRelationship.resources
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.ChangeColumnName.resources
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddReviewModel.resources
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddProductSalePrice.resources
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddReviewRating.resources
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.UpdateCategoryModel.resources
+C:\Users\To Hoang Phuc\Desktop\LapTrinhWeb\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddReviewDateTime.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\SNKRS.dll.config
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\SNKRS.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\SNKRS.pdb
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\csc.exe
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\csc.exe.config
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\csc.rsp
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\csi.exe
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\csi.exe.config
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\csi.rsp
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\System.Buffers.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\System.Memory.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\vbc.exe
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\vbc.exe.config
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\vbc.rsp
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\VBCSCompiler.exe
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Antlr3.Runtime.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\EntityFramework.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\EntityFramework.SqlServer.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Newtonsoft.Json.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Owin.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\PagedList.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\PagedList.Mvc.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.Helpers.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.Mvc.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.Optimization.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.Razor.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.WebPages.Deployment.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.WebPages.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.WebPages.Razor.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\WebGrease.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Newtonsoft.Json.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\PagedList.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\PagedList.Mvc.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.Helpers.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.Mvc.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.Optimization.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.Razor.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.WebPages.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.WebPages.Deployment.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\System.Web.WebPages.Razor.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Antlr3.Runtime.pdb
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\EntityFramework.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\EntityFramework.SqlServer.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.csproj.AssemblyReference.cache
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.InitialModel.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddProductVisibility.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.ChangeProductCategoryRelationship.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.ChangeColumnName.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddReviewModel.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddProductSalePrice.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddReviewRating.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.UpdateCategoryModel.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.Migrations.AddReviewDateTime.resources
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.csproj.GenerateResource.cache
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.csproj.CoreCompileInputs.cache
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.csproj.CopyComplete
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.dll
+D:\Hutech\Lập trình web\đồ án\SNKRS\SNKRS\obj\Debug\SNKRS.pdb
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\SNKRS.dll.config
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\SNKRS.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\SNKRS.pdb
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\csc.exe
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\csc.exe.config
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\csc.rsp
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\csi.exe
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\csi.exe.config
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\csi.rsp
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\System.Buffers.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\System.Memory.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\vbc.exe
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\vbc.exe.config
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\vbc.rsp
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Antlr3.Runtime.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\EntityFramework.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\EntityFramework.SqlServer.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Newtonsoft.Json.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Owin.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\PagedList.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\PagedList.Mvc.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.Helpers.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.Mvc.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.Optimization.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.Razor.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.WebPages.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\WebGrease.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Newtonsoft.Json.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\PagedList.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\PagedList.Mvc.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.Helpers.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.Mvc.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.Optimization.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.Razor.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.WebPages.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Antlr3.Runtime.pdb
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\EntityFramework.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\EntityFramework.SqlServer.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\obj\Debug\SNKRS.csproj.AssemblyReference.cache
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\obj\Debug\SNKRS.csproj.CoreCompileInputs.cache
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\obj\Debug\SNKRS.csproj.Up2Date
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\obj\Debug\SNKRS.dll
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\obj\Debug\SNKRS.pdb
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\obj\Debug\SNKRS.Migrations.update1.resources
+C:\Users\Ngomu\Downloads\web-selling-shoes-main\web-selling-shoes-main\SNKRS\obj\Debug\SNKRS.csproj.GenerateResource.cache
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\SNKRS.dll.config
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\SNKRS.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\SNKRS.pdb
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\csc.exe
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\csc.exe.config
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\csc.rsp
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\csi.exe
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\csi.exe.config
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\csi.rsp
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\System.Buffers.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\System.Memory.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\vbc.exe
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\vbc.exe.config
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\vbc.rsp
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Antlr3.Runtime.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\EntityFramework.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Newtonsoft.Json.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Owin.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\PagedList.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\PagedList.Mvc.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.Helpers.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.Mvc.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.Optimization.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.Razor.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.WebPages.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\WebGrease.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Newtonsoft.Json.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\PagedList.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\PagedList.Mvc.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.Helpers.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.Mvc.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.Optimization.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.Razor.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.WebPages.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Antlr3.Runtime.pdb
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\EntityFramework.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\obj\Debug\SNKRS.csproj.AssemblyReference.cache
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\obj\Debug\SNKRS.csproj.CoreCompileInputs.cache
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\obj\Debug\SNKRS.csproj.Up2Date
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\obj\Debug\SNKRS.dll
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\obj\Debug\SNKRS.pdb
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\obj\Debug\SNKRS.Migrations.InitialCreate.resources
+C:\Users\DELL-PC\Downloads\DACS\SNKRS\obj\Debug\SNKRS.csproj.GenerateResource.cache
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\SNKRS.dll.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\SNKRS.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\SNKRS.pdb
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csc.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csc.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csc.rsp
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csi.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csi.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\csi.rsp
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Buffers.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Memory.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\vbc.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\vbc.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\vbc.rsp
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Antlr3.Runtime.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\EntityFramework.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\EntityFramework.SqlServer.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Newtonsoft.Json.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Owin.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PagedList.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PagedList.Mvc.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Helpers.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Mvc.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Optimization.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Razor.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\WebGrease.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Newtonsoft.Json.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PagedList.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\PagedList.Mvc.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Helpers.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Mvc.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Optimization.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.Razor.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Antlr3.Runtime.pdb
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\EntityFramework.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\EntityFramework.SqlServer.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\SNKRS.csproj.AssemblyReference.cache
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\SNKRS.csproj.CoreCompileInputs.cache
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\SNKRS.csproj.Up2Date
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\SNKRS.dll
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\SNKRS.pdb
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\SNKRS.Migrations.update.resources
+C:\Users\Ngomu\Downloads\DACS\DACS\SNKRS\obj\Debug\SNKRS.csproj.GenerateResource.cache

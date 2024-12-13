@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\App_Start",
+    "\\bin",
+    "\\Controllers",
+    "\\Migrations",
+    "\\Models",
+    "\\obj",
+    "\\Properties",
+    "\\Scripts",
+    "\\ViewModels"
+  ],
+  "PreviewInSolutionExplorer": false
+}

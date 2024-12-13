@@ -1,0 +1,132 @@
+﻿@model SNKRS.ViewModels.ShopViewModel
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Shop";
+}
+
+@section styles {
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+}
+
+<div class="container min-vh-100">
+    <h1 class="py-3">@ViewBag.Title</h1>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="accordion mb-3" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Filters
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-lg">
+                                    <label>Search</label>
+                                    <input class="form-control" id="search" value="@ViewBag.search" />
+                                </div>
+                                <div class="col-lg">
+                                    @Html.LabelFor(model => model.Categories)
+                                    @Html.DropDownListFor(model => model.Categories, new SelectList(Model.AllCategories), new { @class = "form-control select2 categories-select", @multiple = "multiple", @data_placeholder = "Select categories" })
+                                </div>
+                                <div class="col-lg">
+                                    @Html.LabelFor(model => model.Sizes)
+                                    @Html.DropDownListFor(model => model.Sizes, new SelectList(Model.AllSizes), new { @class = "form-control select2 sizes-select", @multiple = "multiple", @data_placeholder = "Select sizes" })
+                                </div>
+                            </div>
+                            <br />
+                            <a class="btn btn-success" onclick="ApplyFilter()">Apply filter</a>
+                            <a class="btn btn-outline-primary" onclick="ApplyFilter('DESC')">Price: High to Low <i class="fa-solid fa-arrow-down-wide-short"></i></a>
+                            <a class="btn btn-outline-primary" onclick="ApplyFilter('ASC')">Price: Low to High <i class="fa-solid fa-arrow-down-short-wide"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reflow-product-list ref-cards">
+                <div class="ref-products">
+                    @if (Model.Products.Count == 0)
+                    {
+                        <p>No Result</p>
+                    }
+                    @foreach (var item in Model.Products)
+                    {
+                        <a class="ref-product" href="@Url.Action("Details", "Product", new { id = item.Id })">
+                            <img class="ref-image" src="@item.Image" loading="lazy">
+                            <div class="ref-product-data">
+                                <div class="ref-product-info">
+                                    <h5 class="ref-name">@item.Name</h5>
+                                </div>
+                                @if (item.SalePrice > 0)
+                                {
+                                    <p class="ref-price"><span class="text-decoration-line-through text-muted">@String.Format("{0:#,##0}", item.Price)</span> - @String.Format("{0:#,##0}", item.SalePrice)<u>đ</u></p>
+                                }
+                                else
+                                {
+                                    <p class="ref-price">@String.Format("{0:#,##0}", item.Price)<u>đ</u></p>
+                                }
+                            </div>
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+
+        @Html.PagedListPager(Model.Products, page => Url.Action("Index", new { search = ViewBag.search, categories = ViewBag.categories, sizes = ViewBag.sizes, page = page }),
+new PagedListRenderOptions
+{
+    UlElementClasses = new string[] { "pagination", "justify-content-center" },
+    LiElementClasses = new string[] { "page-item" },
+})
+    </nav>
+</div>
+
+@section scripts {
+    <!-- Select2 -->
+    <script src="~/Content/AdminLTE/plugins/select2/js/select2.full.min.js"></script>
+    <!-- Page specific script -->
+    <script>
+        $(function () {
+            $(".page-item").children().addClass("page-link");
+            //Initialize Select2 Elements
+            $('.select2').select2({
+                theme: 'bootstrap4'
+            });
+            var url = window.location.href;
+            console.log(url);
+            if (url.includes('?')) {
+                $("#collapseOne").addClass("show");
+                $(".accordion-button").removeClass("collapsed");
+            }
+        })
+
+        function ApplyFilter(order) {
+            var categories = $('.categories-select').val();
+            var sizes = $('.sizes-select').val();
+            var search = $("#search").val();
+            var filterCategories;
+            var filterSizes;
+            var url = location.protocol + '//' + location.host + location.pathname + "?";
+            if (search != null) {
+                url += "&search=" + search;
+            }
+            if (categories.length > 0) {
+                filterCategories = categories.join(',');
+                url += "&categories=" + filterCategories;
+            }
+            if (sizes.length > 0) {
+                filterSizes = sizes.join(',');
+                url += "&sizes=" + filterSizes;
+            }
+            if (order != null) {
+                url += "&order=" + order;
+            }
+            window.location.href = url;
+        }
+    </script>
+}

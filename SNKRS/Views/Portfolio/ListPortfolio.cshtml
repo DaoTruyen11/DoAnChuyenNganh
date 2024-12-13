@@ -1,0 +1,292 @@
+﻿@model IEnumerable<SNKRS.Models.Portfolio>
+
+@{
+    ViewBag.Title = "Portfolios";
+    ViewBag.Active = "List";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript">(function () { var css = document.createElement('link'); css.href = 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
+    <link rel="stylesheet" href="~/assets/css/app.css">
+    <link rel="stylesheet" href="~/assets/css/theme.css">
+
+    <!-- LazyLoad CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/lozad@1.14.0/dist/lozad.min.js"></script>
+
+    <style>
+        body {
+            background-color: rgba(0, 0, 255, 0.2);
+            font-family: Arial, sans-serif;
+        }
+
+        /* CSS cho thanh chức năng */
+        .custom-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff; /* Màu nền */
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng */
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px; /* Khoảng cách giữa các mục */
+        }
+
+        .menu-item {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+            /* Thêm dấu chấm trước các item trong menu */
+            .menu-item::before {
+                content: "•";
+                position: absolute;
+                left: -1px;
+                color: black; /* Màu chấm đen */
+                font-size: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .menu-item:hover {
+                background-color: #d3a6ff; /* Màu tím nhạt khi hover */
+                color: #fff;
+            }
+
+                .menu-item:hover::before {
+                    color: #fff; /* Dấu chấm chuyển thành màu trắng khi hover */
+                }
+
+            /* Loại bỏ gạch chân khi di chuột qua item */
+            .menu-item:hover,
+            .menu-item a {
+                text-decoration: none;
+            }
+
+        /* Dropdown menu */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            z-index: 1000;
+            padding: 10px;
+            transition: all 0.3s ease-in-out; /* Mượt mà hơn */
+            opacity: 0; /* Ẩn menu khi không hover */
+            visibility: hidden;
+        }
+
+        /* Hiển thị dropdown khi hover */
+        .menu-item.dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1; /* Hiển thị dropdown */
+            visibility: visible; /* Đảm bảo dropdown không bị ẩn */
+        }
+
+        .dropdown-item {
+            display: block;
+            padding: 8px 16px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+            .dropdown-item:hover {
+                background-color: #f0f0f0;
+                color: #007bff;
+            }
+
+        .card-columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+            .card img {
+                max-width: 100%;
+                border-radius: 8px;
+                margin-bottom: 10px;
+                opacity: 0; /* Ẩn hình ảnh trước khi tải */
+                transition: opacity 1s ease; /* Hiệu ứng mờ dần khi tải */
+            }
+
+                /* Hiệu ứng mờ dần khi hình ảnh được tải */
+                .card img.loaded {
+                    opacity: 1;
+                }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function extractCategoryName(fullCategoryName) {
+                var startIndex = fullCategoryName.indexOf('(');
+                if (startIndex > 0) {
+                    return fullCategoryName.substring(0, startIndex).trim();
+                }
+                return fullCategoryName.trim();
+            }
+
+            var categories = document.querySelectorAll('.nav-item');
+
+            categories.forEach(function (category) {
+                category.addEventListener('click', function (event) {
+                    var categoryName = extractCategoryName(event.target.textContent.trim());
+
+                    if (categoryName === "More") return; // Skip if "More" dropdown is clicked
+
+                    var portfolioItems = document.querySelectorAll('.card-columns .card');
+
+                    portfolioItems.forEach(function (item) {
+                        var categoriesList = Array.from(item.querySelectorAll('ul li')).map(function (li) {
+                            return extractCategoryName(li.textContent.trim());
+                        });
+
+                        if (categoriesList.includes(categoryName)) {
+                            item.style.display = 'block'; // Show portfolio if it has the clicked category
+                        } else {
+                            item.style.display = 'none'; // Hide portfolio if it doesn't have the clicked category
+                        }
+                    });
+                });
+            });
+        });
+
+        function reloadPage() {
+            location.reload(); // Reload lại trang khi nhấp vào "Tất cả"
+        }
+
+    </script>
+
+</head>
+
+<body class="portfolio-view">
+
+    <main role="main">
+        <section class="mt-4 mb-5">
+            <div class="container mb-4">
+                <h1 class="font-weight-bold title">Tìm kiếm</h1>
+                <div class="row no-css">
+                    <div class="custom-menu">
+                        <div class="menu-container">
+                            <a class="menu-item" href="#" onclick="reloadPage()">Tất cả</a>
+                            @foreach (var category in Model.SelectMany(p => p.Categories).Distinct().Take(4))
+                            {
+                                if (category != null)
+                                {
+
+                                    <a class="menu-item" href="#">
+                                        <span></span>@GetCategoryName(category.Name)
+                                    </a>
+
+                                }
+                            }
+                            @if (Model.SelectMany(p => p.Categories).Distinct().Count() > 4)
+                            {
+                                <div class="menu-item dropdown">
+                                    <a class="dropdown-toggle" href="#" id="dropdownMenuLink">Thêm</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        @foreach (var category in Model.SelectMany(p => p.Categories).Distinct().Skip(4))
+                                        {
+                                            if (category != null)
+                                            {
+                                                <a class="dropdown-item" href="#">@GetCategoryName(category.Name)</a>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        @functions {
+                            public string GetCategoryName(string fullCategoryName)
+                            {
+                                int startIndex = fullCategoryName.IndexOf('(');
+                                if (startIndex > 0)
+                                {
+                                    return fullCategoryName.Substring(0, startIndex).Trim();
+                                }
+                                return fullCategoryName;
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card-columns">
+                        @foreach (var item in Model)
+                        {
+                            <div class="card card-pin">
+                                <!-- Sử dụng Lazy Load -->
+                                <img class="card-img lozad" data-src="@item.Image" alt="Card image">
+                                <div class="overlay">
+                                    <h2 class="card-title title">@item.Name</h2>
+                                    <div class="more">
+                                        @Html.ActionLink("More", "Details", new { id = item.Id }, new { @class = "fa fa-arrow-circle-o-right", @aria_hidden = "true" })
+                                    </div>
+
+                                    <ul>
+                                        @foreach (var category in item.Categories)
+                                        {
+                                            <li>@category.Name</li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="~/assets/js/app.js"></script>
+    <script src="~/assets/js/theme.js"></script>
+
+    <!-- LazyLoad Script -->
+    <script>
+        // Khởi tạo LazyLoad
+        const observer = lozad('.lozad', {
+            loaded: function (el) {
+                // Thêm hiệu ứng mờ khi hình ảnh được tải
+                el.classList.add('loaded');
+            }
+        });
+        observer.observe();
+    </script>
+
+</body>
+</html>

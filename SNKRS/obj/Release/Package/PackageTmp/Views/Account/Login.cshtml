@@ -1,0 +1,72 @@
+﻿@using SNKRS.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@ViewBag.Title</title>
+    <!-- Add the necessary CSS files -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/fonts/material-icon/css/material-design-iconic-font.min.css">
+</head>
+<body>
+
+    <div class="main">
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="~/images/signin-image.jpg" alt="sign up image"></figure>
+                        @Html.ActionLink("Create an account", "Register", null, new { @class = "signup-image-link" })
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">@ViewBag.Title</h2>
+                        <section id="loginForm">
+                            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "register-form", role = "form" }))
+                            {
+                            @Html.AntiForgeryToken()
+
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Your Name", id = "your_name" })
+                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password", id = "your_pass" })
+                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                            </div>
+                            }
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/main.js"></script>
+</body>
+</html>
+

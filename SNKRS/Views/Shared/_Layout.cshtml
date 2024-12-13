@@ -1,0 +1,270 @@
+﻿@using SNKRS.Models
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - PortfolioWeb</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.reflowhq.com/v1/toolkit.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    @RenderSection("styles", required: false)
+</head>
+<style>
+    /* Đặt màu nền cho navbar */
+    .navbar {
+        background-color: #ffffff; /* Màu nền trắng */
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng nhẹ cho navbar */
+    }
+
+    /* Đảm bảo logo nằm ở bên trái ngoài cùng */
+    .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+        color: #1877f2; /* Màu xanh giống Facebook */
+        margin-right: 50px; /* Khoảng cách giữa logo và các mục menu */
+    }
+
+    /* Các mục navbar sẽ được căn giữa hoặc chia khoảng cách */
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between; /* Chia đều khoảng cách giữa các mục */
+        align-items: center; /* Canh giữa các mục theo chiều dọc */
+        width: 100%; /* Đảm bảo menu chiếm hết chiều rộng */
+    }
+
+        /* Khoảng cách giữa các mục */
+        .navbar-nav .nav-item {
+            margin-right: 20px; /* Khoảng cách giữa các mục */
+        }
+
+        /* Hiệu ứng hover cho các liên kết trong navbar */
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            transition: all 0.5s ease-in-out; /* Chuyển đổi mượt hơn */
+        }
+
+            /* Màu khi di chuột vào các liên kết */
+            .navbar-nav .nav-link:hover {
+                background-color: #FFCCCC; /* Màu nền khi hover */
+                color: white;
+                border-radius: 4px;
+            }
+
+    /* Điều chỉnh biểu tượng menu toggle trên mobile */
+    .navbar-toggler {
+        border-color: #1877f2; /* Màu của nút hamburger */
+    }
+
+    .navbar-toggler-icon {
+        background-color: #1877f2; /* Màu của icon hamburger */
+    }
+
+    /* Nút trò chuyện */
+    .chat-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999; /* Đảm bảo nút luôn ở trên cùng */
+    }
+
+        .chat-button a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: #1877f2; /* Màu xanh giống Facebook */
+            color: white;
+            text-decoration: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+            .chat-button a:hover {
+                background-color: #0056b3;
+                text-decoration: none;
+            }
+
+        .chat-button i {
+            margin-right: 8px;
+        }
+
+    /* Điều chỉnh menu và hiệu ứng mượt */
+    .nav-item {
+        position: relative;
+    }
+
+    .menu-text {
+        display: inline-block;
+        opacity: 0; /* Ban đầu ẩn chữ */
+        margin-left: 0;
+        transition: opacity 0.5s ease, margin-left 0.5s ease; /* Thời gian và hiệu ứng xuất hiện chữ */
+    }
+
+    .nav-item:hover .menu-text {
+        opacity: 1; /* Hiện chữ khi hover */
+        margin-left: 10px; /* Tạo khoảng cách khi chữ xuất hiện */
+    }
+
+    .nav-item i {
+        font-size: 20px;
+        transition: transform 0.5s ease; /* Hiệu ứng mượt khi icon thay đổi */
+    }
+
+    .nav-item:hover i {
+        transform: scale(1.2); /* Phóng to nhẹ icon khi hover */
+        margin-right: 5px;
+    }
+
+
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Logo nằm sát cạnh trái màn hình -->
+            <a class="navbar-brand custom-logo" href="@Url.Action("Index", "Home")">
+                <img src="~/favicon.ico" alt="Logo" style="height: 40px; width: 40px;">
+            </a>
+
+
+
+            <!-- Nút chuyển đổi cho thiết bị di động -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="~/Content/Images/logo.jpg" alt="Menu Icon" style="width: 30px; height: 30px;">
+            </button>
+
+
+
+            <!-- Danh sách menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home")">
+                            <i class="fas fa-home"></i>
+                            <span class="menu-text">Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("ListPortfolio", "Portfolio")">
+                            <i class="fas fa-briefcase"></i>
+                            <span class="menu-text">Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "OCR")">
+                            <i class="fas fa-cog"></i>
+                            <span class="menu-text">AI Trợ giúp</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Create", "Portfolio")">
+                            <i class="fas fa-plus-circle"></i>
+                            <span class="menu-text">Đăng bài</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Chat")">
+                            <i class="fas fa-comment-dots"></i>
+                            <span class="menu-text">Chat</span>
+                        </a>
+                    </li>
+
+                    @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        @RenderBody()
+    </main>
+
+ 
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>TK</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-snapchat"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            </div>
+            <p class="copyright">TK © 2022</p>
+        </div>
+    </footer>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "105449742133587");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v13.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script>
+        $.ajax({
+            url: "@Url.Action("GetCartAmount", "Cart")",
+            success: function (res) {
+                $("#cart-amount").text(res);
+            }
+        })
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

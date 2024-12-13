@@ -1,0 +1,144 @@
+﻿@model SNKRS.Areas.Admin.ViewModels.ProductViewModel
+
+@{
+    ViewBag.Title = "Create new Product";
+    ViewBag.Active = "Products";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section CustomHead {
+    <!-- summernote -->
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/summernote/summernote-bs4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/Content/AdminLTE/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+}
+@using (Html.BeginForm("Create", "Product"))
+{
+    @Html.AntiForgeryToken()
+    <div class="mb-3 text-left">
+        <a href="@Url.Action("Index", "Product")" class="btn btn-primary">Back to list</a>
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="card">
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name)
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Price)
+                        @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SalePrice)
+                        @Html.EditorFor(model => model.SalePrice, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.SalePrice, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Description)
+                        @Html.TextAreaFor(model => model.Description, new { @rows = "10", @class = "form-control", @id = "summernote" })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-success">Save</button>
+                </div>
+                <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    @Html.LabelFor(model => model.isVisible)
+                    <br />
+                    @Html.CheckBoxFor(model => model.isVisible)
+                    <span>Is Visible</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Image)
+                        @Html.EditorFor(model => model.Image, new { htmlAttributes = new { @hidden = "true" } })
+                        <img id="image" src="https://res.cloudinary.com/phucsme/image/upload/v1649076069/a6d934de-86d9-4b3b-8626-48465c4b9aa8_cfnhfg.png" class="img-thumbnail" width="100%">
+                        <input type="file" id="file" accept="image/*" hidden />
+                        @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+                        <p><button class="btn btn-primary mt-3" type="button" onclick="selectImage()" id="selectButton">Select</button></p>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Categories)
+                        @Html.DropDownListFor(model => model.ProductCategories, new SelectList(Model.Categories, "Id", "Name"), new { @class = "form-control select2", @multiple = "multiple" })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+}
+
+@section CustomScript {
+    <!-- Summernote -->
+    <script src="~/Content/AdminLTE/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- Select2 -->
+    <script src="~/Content/AdminLTE/plugins/select2/js/select2.full.min.js"></script>
+    <!-- Page specific script -->
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2({
+                theme: 'bootstrap4'
+            });
+
+            // Summernote
+            $('#summernote').summernote({
+                height: 200,
+            });
+        })
+        function selectImage() {
+            $("#file").trigger("click");
+        }
+
+        $("#file").change(function () {
+            console.log(window.formData);
+            if (window.FormData != undefined) {
+                var fileUpload = $("#file").get(0);
+                var files = fileUpload.files;
+                var formData = new FormData();
+                var image = files[0];
+                console.log(image);
+                $("#selectButton").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class= "visually-hidden"> Uploading...</span >');
+                const CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/phucsme/image/upload";
+                const CLOUDINARY_UPLOAD_PRESET = "m6mqoibs";
+                formData.append('file', image);
+                formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
+                $.ajax({
+                    type: "POST",
+                    url: CLOUDINARY_URL,
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+                    success: function (res) {
+                        $("#image").attr("src", res.url);
+                        $("#Image").val(res.url);
+                        $("#selectButton").html("Select");
+                    },
+                    error: function (e) {
+                        alert(e.statusText);
+                    }
+                });
+            }
+        })
+
+
+    </script>
+}

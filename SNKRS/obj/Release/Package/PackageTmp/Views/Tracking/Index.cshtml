@@ -1,0 +1,44 @@
+﻿@model SNKRS.Models.Order
+@{
+    ViewBag.Title = "Tracking";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container my-5 min-vh-100">
+    <div class="row justify-content-lg-center">
+        <div class="col-lg-8">
+            <h2 class="text-center py-3">Order Tracking</h2>
+            @using (Html.BeginForm("Index", "Tracking"))
+            {
+                @Html.AntiForgeryToken()
+                <div class="form-group input-group-lg mb-3">
+                    <input name="Id" type="text" class="form-control" placeholder="Type your Order ID" />
+                </div>
+                <button type="submit" hidden>Track</button>
+            }
+            @if (ViewBag.Search == true)
+            {
+                if (Model != null)
+                {
+                    <div class="card">
+                        <div class="card-body">
+                            <p><b>Order ID: </b>#@Model.Id</p>
+                            <p><b>Customer: </b>@Model.Name</p>
+                            <p><b>Phone: </b>@Model.Phone</p>
+                            <p><b>Address: </b>@Model.Address</p>
+                            <p><b>Date: </b>@Model.Created_At</p>
+                            <p><b>Amount: </b>@String.Format("{0:#,##0}", Model.Amount)</p>
+                            <p><b>Status: </b><span class="badge bg-success">@Model.OrderStatus.Name</span></p>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div>No Result</div>
+                }
+            }
+
+        </div>
+    </div>
+
+</div>

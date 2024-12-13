@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SNKRS.Models.ApplicationUser>
+
+@{
+    ViewBag.Title = "Available Friends";
+}
+
+<h2>Available Friends</h2>
+
+@if (!Model.Any())
+{
+    <p>No users available to send friend requests.</p>
+}
+else
+{
+    <ul>
+        @foreach (var user in Model)
+        {
+            <li>
+                @user.UserName
+                <form method="post" action="@Url.Action("SendRequest", "Friendship")" style="display: inline;">
+                    <input type="hidden" name="friendId" value="@user.Id" />
+                    <button type="submit" class="btn btn-primary btn-sm">Send Friend Request</button>
+                </form>
+            </li>
+        }
+    </ul>
+}

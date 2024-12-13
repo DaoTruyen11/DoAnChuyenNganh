@@ -1,0 +1,7 @@
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\temps\hình ảnh_2024-12-12_211012445.png'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at PortfolioWeb.Controllers.OCRController.ExtractText(HttpPostedFileBase file) in C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\Controllers\OCRController.cs:line 69

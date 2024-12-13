@@ -1,0 +1,9 @@
+System.TypeInitializationException: The type initializer for 'OpenCvSharp.Internal.NativeMethods' threw an exception. ---> System.DllNotFoundException: Unable to load DLL 'OpenCvSharpExtern': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+   at OpenCvSharp.Internal.NativeMethods.redirectError(CvErrorCallback errCallback, IntPtr userdata, IntPtr& prevUserdata)
+   at OpenCvSharp.Internal.NativeMethods.LoadLibraries(IEnumerable`1 additionalPaths)
+   at OpenCvSharp.Internal.NativeMethods..cctor()
+   --- End of inner exception stack trace ---
+   at OpenCvSharp.Internal.NativeMethods.imgcodecs_imread(String fileName, Int32 flags, IntPtr& returnValue)
+   at OpenCvSharp.Mat..ctor(String fileName, ImreadModes flags)
+   at PortfolioWeb.Controllers.OCRController.PreprocessImage(String filePath) in C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\Controllers\OCRController.cs:line 22
+   at PortfolioWeb.Controllers.OCRController.ExtractText(HttpPostedFileBase file) in C:\Users\Ngomu\Downloads\DoAnChuyenNganh\DoAnChuyenNganh\DACS\SNKRS\Controllers\OCRController.cs:line 56
