@@ -1,8 +1,15 @@
 ﻿@using Microsoft.AspNet.Identity
+
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
+        <style>
+            /* Đảm bảo dropdown nằm trên cùng */
+            .navbar-nav .nav-item .dropdown-menu {
+                z-index: 5; /* Đảm bảo dropdown nằm trên cùng */
+            }
+        </style>
         @Html.AntiForgeryToken()
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

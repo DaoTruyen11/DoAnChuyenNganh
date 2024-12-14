@@ -20,7 +20,7 @@
 
         body {
             background-image: url('@Url.Content("~/Content/Images/HomeBG.jpg")');
-
+            z-index: 0;
             background-size: cover; /* Ảnh sẽ phủ kín màn hình */
             background-repeat: no-repeat; /* Không lặp lại ảnh */
             background-position: center; /* Ảnh được căn giữa */
@@ -240,12 +240,18 @@
             z-index: 10000;
         }
         .title-heading {
+            z-index: -1;
             color: #fff; /* Màu trắng */
             font-size: 3.5rem; /* Tăng kích thước chữ */
             font-weight: bold; /* Làm chữ đậm hơn */
             text-transform: uppercase; /* Chuyển thành chữ in hoa */
             margin-bottom: 30px; /* Khoảng cách dưới tiêu đề */
         }
+        .container.py-4 {
+            position: relative; /* Đảm bảo container có thể sử dụng z-index */
+            z-index: -1; /* Đặt container xuống dưới các phần tử khác */
+        }
+
 
     </style>
 </head>
