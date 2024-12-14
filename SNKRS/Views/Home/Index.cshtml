@@ -40,13 +40,12 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
-                opacity: 0.5; /* Đặt độ trong suốt */
-                z-index: -1; /* Đẩy lớp phủ ra phía sau nội dung */
+       
             }
 
         .container {
             position: relative; /* Nội dung bên trên ảnh nền */
-            z-index: 1; /* Đảm bảo nội dung hiển thị phía trên lớp phủ */
+    /* Đảm bảo nội dung hiển thị phía trên lớp phủ */
             color: #000; /* Đặt màu chữ dễ đọc */
         }
         .fb-post {
@@ -247,10 +246,7 @@
             text-transform: uppercase; /* Chuyển thành chữ in hoa */
             margin-bottom: 30px; /* Khoảng cách dưới tiêu đề */
         }
-        .container.py-4 {
-            position: relative; /* Đảm bảo container có thể sử dụng z-index */
-            z-index: -1; /* Đặt container xuống dưới các phần tử khác */
-        }
+        
 
 
     </style>

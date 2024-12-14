@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|c:\\users\\ngomu\\onedrive\\desktop\\dacn\\dacn\\snkrs\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|C:\\Users\\Ngomu\\OneDrive\\Desktop\\DACN\\DACN\\snkrs\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|c:\\users\\ngomu\\onedrive\\desktop\\dacn\\dacn\\snkrs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|C:\\Users\\Ngomu\\OneDrive\\Desktop\\DACN\\DACN\\snkrs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|c:\\users\\ngomu\\onedrive\\desktop\\dacn\\dacn\\snkrs\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|C:\\Users\\Ngomu\\OneDrive\\Desktop\\DACN\\DACN\\snkrs\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "SNKRS\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Ngomu\\OneDrive\\Desktop\\DACN\\DACN\\SNKRS\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "SNKRS\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAO0AAAAAAAAAAAAAAP0AAAAAAAAA",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAAAP0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-14T05:21:53.495Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "SNKRS\\Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T05:20:06.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T05:20:06.308Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "SNKRS\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T05:16:57.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T05:16:57.077Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "SNKRS\\Startup.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T05:01:07.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T05:01:07.731Z"
             }
           ]
         }
