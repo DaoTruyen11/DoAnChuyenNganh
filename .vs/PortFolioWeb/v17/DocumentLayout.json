@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\WebFortpolio\\DACN\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|d:\\webfortpolio\\dacn\\snkrs\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|D:\\WebFortpolio\\DACN\\snkrs\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|d:\\webfortpolio\\dacn\\snkrs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|D:\\WebFortpolio\\DACN\\snkrs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -138,11 +142,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Chat\\Index.cshtml",
               "RelativeDocumentMoniker": "SNKRS\\Views\\Chat\\Index.cshtml",
@@ -155,7 +159,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Web.config",
+              "RelativeDocumentMoniker": "SNKRS\\Views\\Web.config",
+              "ToolTip": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Web.config",
+              "RelativeToolTip": "SNKRS\\Views\\Web.config",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-24T03:28:55.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "FilterConfig.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\App_Start\\FilterConfig.cs",
               "RelativeDocumentMoniker": "SNKRS\\App_Start\\FilterConfig.cs",
@@ -167,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BundleConfig.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\App_Start\\BundleConfig.cs",
               "RelativeDocumentMoniker": "SNKRS\\App_Start\\BundleConfig.cs",
@@ -179,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "SNKRS\\Views\\Home\\Index.cshtml",
@@ -187,12 +204,11 @@
               "RelativeToolTip": "SNKRS\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAABkBAAAAAAAAAAAlwEsBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T05:21:53.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T05:21:53.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Portfolio.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Models\\Portfolio.cs",
               "RelativeDocumentMoniker": "SNKRS\\Models\\Portfolio.cs",
@@ -204,20 +220,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Web.config",
               "RelativeDocumentMoniker": "SNKRS\\Web.config",
               "ToolTip": "D:\\WebFortpolio\\DACN\\SNKRS\\Web.config",
               "RelativeToolTip": "SNKRS\\Web.config",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIIAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-12-26T18:34:56.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Areas\\Admin\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "SNKRS\\Areas\\Admin\\Controllers\\AdminController.cs",
@@ -229,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "web.config",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Areas\\Admin\\Views\\web.config",
               "RelativeDocumentMoniker": "SNKRS\\Areas\\Admin\\Views\\web.config",
@@ -241,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Areas\\Admin\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "SNKRS\\Areas\\Admin\\Controllers\\CategoryController.cs",
@@ -253,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IdentityConfig.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\App_Start\\IdentityConfig.cs",
               "RelativeDocumentMoniker": "SNKRS\\App_Start\\IdentityConfig.cs",
@@ -265,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "SNKRS\\App_Start\\RouteConfig.cs",
@@ -277,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "SNKRS\\Areas\\Admin\\Controllers\\DashboardController.cs",
@@ -289,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Startup.Auth.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\App_Start\\Startup.Auth.cs",
               "RelativeDocumentMoniker": "SNKRS\\App_Start\\Startup.Auth.cs",
@@ -301,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Startup.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Startup.cs",
               "RelativeDocumentMoniker": "SNKRS\\Startup.cs",
@@ -313,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "PostController.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "SNKRS\\Controllers\\PostController.cs",
@@ -325,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Comment.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Models\\Comment.cs",
               "RelativeDocumentMoniker": "SNKRS\\Models\\Comment.cs",
@@ -337,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Global.asax.cs",
               "RelativeDocumentMoniker": "SNKRS\\Global.asax.cs",
@@ -349,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "SNKRS\\Controllers\\HomeController.cs",
@@ -361,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\packages.config",
               "RelativeDocumentMoniker": "SNKRS\\packages.config",
@@ -373,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "PortfolioController.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Controllers\\PortfolioController.cs",
               "RelativeDocumentMoniker": "SNKRS\\Controllers\\PortfolioController.cs",
@@ -385,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DashboardViewModel.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
               "RelativeDocumentMoniker": "SNKRS\\Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
@@ -397,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Reply.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Models\\Reply.cs",
               "RelativeDocumentMoniker": "SNKRS\\Models\\Reply.cs",
@@ -409,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Portfolio\\Index.cshtml",
               "RelativeDocumentMoniker": "SNKRS\\Views\\Portfolio\\Index.cshtml",
@@ -421,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Areas\\Admin\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "SNKRS\\Areas\\Admin\\Controllers\\ProductController.cs",
@@ -433,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "SNKRS\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
@@ -445,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "UserViewModel.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Areas\\Admin\\ViewModels\\UserViewModel.cs",
               "RelativeDocumentMoniker": "SNKRS\\Areas\\Admin\\ViewModels\\UserViewModel.cs",
@@ -457,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "ProductViewModel.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Areas\\Admin\\ViewModels\\ProductViewModel.cs",
               "RelativeDocumentMoniker": "SNKRS\\Areas\\Admin\\ViewModels\\ProductViewModel.cs",
@@ -469,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "SNKRS\\Models\\ApplicationDbContext.cs",
@@ -481,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Index1.cshtml",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Chat\\Index1.cshtml",
               "RelativeDocumentMoniker": "SNKRS\\Views\\Chat\\Index1.cshtml",
@@ -493,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\OCR\\Index.cshtml",
               "RelativeDocumentMoniker": "SNKRS\\Views\\OCR\\Index.cshtml",
@@ -505,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "SNKRS\\Views\\Shared\\_LoginPartial.cshtml",
@@ -513,12 +529,11 @@
               "RelativeToolTip": "SNKRS\\Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T05:20:06.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T05:20:06.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "SNKRS\\Views\\Shared\\_Layout.cshtml",
@@ -526,8 +541,7 @@
               "RelativeToolTip": "SNKRS\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAPsAAAAAAAAAAAAgwBYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T05:16:57.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T05:16:57.077Z"
             }
           ]
         }
