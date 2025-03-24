@@ -17,25 +17,23 @@ namespace SNKRS.Areas.Admin.Controllers
 
         public ActionResult Index()
         {
-            var viewModel = new DashboardViewModel();
-            
+            var postsCount = db.Portfolios.Count();
+            var likesCount = db.Likes.Count();
+            var commentsCount = db.Comments.Count();
+
+            System.Diagnostics.Debug.WriteLine($"PostsCount: {postsCount}");
+            System.Diagnostics.Debug.WriteLine($"LikesCount: {likesCount}");
+            System.Diagnostics.Debug.WriteLine($"CommentsCount: {commentsCount}");
+
+            var viewModel = new DashboardViewModel
+            {
+                PostsCount = postsCount,
+                LikesCount = likesCount,
+                CommentsCount = commentsCount
+            };
+
             return View(viewModel);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Index(FormCollection form)
-        {
-            var date = Convert.ToDateTime(form["datePicker"]);
-           
-           
-            var dayProducts = db.Portfolios.SqlQuery($"select P.* from ( select PS.ProductId, Count(PS.ProductId) as Count from Orders O inner join OrderDetails OD on O.Id = OD.OrderId inner join ProductSizes PS on OD.ProductSizeId = PS.Id where Day(O.Created_At) = {date.Day} and Month(O.Created_At) = {date.Month} and Year(O.Created_At) = {date.Year} group by PS.ProductId ) A inner join Products P on P.Id = A.ProductId order by A.Count desc").ToList<Portfolio>();
-            var viewModel = new DashboardViewModel()
-            {
-                
-                DayProducts = dayProducts,
-            };
-            return View(viewModel);
-        }
     }
 }

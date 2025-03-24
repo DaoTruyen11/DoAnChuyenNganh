@@ -13,11 +13,11 @@ namespace SNKRS
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // Đảm bảo route mặc định cho trang Home/Index
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new string[] { "SNKRS.Controllers" }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

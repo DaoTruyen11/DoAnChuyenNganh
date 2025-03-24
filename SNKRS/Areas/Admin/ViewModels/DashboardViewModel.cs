@@ -20,5 +20,8 @@ namespace SNKRS.Areas.Admin.ViewModels
         public int DayOrder { get; set; }
         public IEnumerable<Portfolio> DayProducts { get; set; }
         public List<int> DayProductsCount { get; set; }
+        public int PostsCount { get; set; }
+        public int LikesCount { get; set; }
+        public int CommentsCount { get; set; }
     }
 }

@@ -15,18 +15,19 @@ namespace SNKRS.Controllers
         {
             db = new ApplicationDbContext();
         }
+
         public ActionResult Index()
         {
             var model = new HomeViewModel
             {
-                Portfolios = db.Portfolios.Where(p => p.isVisible).OrderBy(p => p.Id).OrderByDescending(p => p.Id).Take(20).ToList()  // Lọc các portfolio hiển thị
+                Portfolios = db.Portfolios
+                                .Where(p => p.isVisible)  // Lọc các portfolio có trường isVisible là true
+                                .OrderByDescending(p => p.Id)  // Sắp xếp giảm dần theo Id
+                                .Take(20)  // Lấy 20 bản ghi đầu tiên
+                                .ToList()
             };
 
-            return View(model);
+            return View(model);  // Trả về view với model chứa danh sách các portfolio
         }
-
-
-
-       
     }
 }

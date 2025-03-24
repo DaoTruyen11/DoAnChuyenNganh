@@ -12,41 +12,68 @@ namespace PortfolioWeb.Controllers
     {
         private readonly ApplicationDbContext db = new ApplicationDbContext();
 
-        // Action for replying to a comment
         [HttpPost]
-        [Authorize]  // Ensure only logged-in users can reply
+        public ActionResult ReplyToComment(int commentId, string replyText)
+        {
+            var userId = User.Identity.GetUserId(); // Get the current user ID
+            var newReply = new Reply
+            {
+                CommentId = commentId,
+                UserId = userId,
+                Text = replyText,
+                CreatedAt = DateTime.Now
+            };
+
+            // Add reply to database
+            db.Replies.Add(newReply);
+            db.SaveChanges();
+
+            // Lấy lại bình luận và trả lời
+            var postId = db.Comments.Where(c => c.Id == commentId).Select(c => c.PostId).FirstOrDefault();
+            var comments = db.Comments
+                             .Where(c => c.PostId == postId)
+                             .Include(c => c.Replies)
+                             .OrderByDescending(c => c.CreatedAt)
+                             .ToList();
+
+            return Json(new { status = "success", postId = postId, comments = comments }); // Trả về dữ liệu bình luận và câu trả lời mới
+        }
+
+
+        [HttpPost]
+        [Authorize]  // Chỉ cho phép người dùng đã đăng nhập trả lời bình luận
         public ActionResult Reply(int commentId, string text)
         {
             if (string.IsNullOrWhiteSpace(text))
             {
-                return RedirectToAction("PostDetails", "Post", new { id = commentId });  // Redirect to post details if reply is empty
+                return RedirectToAction("PostDetails", "Post", new { id = commentId });  // Nếu bình luận rỗng, quay lại chi tiết bài viết
             }
 
-            // Get the original comment to reply to
+            // Lấy bình luận gốc mà người dùng muốn trả lời
             var originalComment = db.Comments.Find(commentId);
 
             if (originalComment == null)
             {
-                return HttpNotFound();  // If the comment doesn't exist, return 404
+                return HttpNotFound();  // Nếu không tìm thấy bình luận gốc, trả về lỗi 404
             }
 
-            // Create a new comment (reply)
-            var userId = User.Identity.GetUserId();  // Assuming you're using ASP.NET Identity
+            // Tạo bình luận mới (bình luận trả lời)
+            var userId = User.Identity.GetUserId();  // Lấy UserId của người dùng hiện tại
             var reply = new Comment
             {
-                PostId = originalComment.PostId,  // The reply belongs to the same post
+                PostId = originalComment.PostId,  // Bình luận trả lời thuộc về bài viết gốc
                 UserId = userId,
                 Text = text,
                 CreatedAt = DateTime.Now,
-                ParentCommentId = commentId  // Set ParentCommentId to the original comment's Id
+                ParentCommentId = commentId  // Liên kết với bình luận gốc qua ParentCommentId
             };
 
-            db.Comments.Add(reply);  // Add the reply to the context
-            db.SaveChanges();  // Save changes to the database
+            db.Comments.Add(reply);  // Thêm bình luận trả lời vào cơ sở dữ liệu
+            db.SaveChanges();  // Lưu thay đổi vào cơ sở dữ liệu
 
-            return RedirectToAction("PostDetails", "Post", new { id = originalComment.PostId });  // Redirect back to the post details page
+            return RedirectToAction("PostDetails", "Post", new { id = originalComment.PostId });  // Quay lại trang chi tiết bài viết
         }
-    
+
 
         // Thêm Like cho bài viết
         [HttpPost]
@@ -124,6 +151,7 @@ namespace PortfolioWeb.Controllers
                 UserId = user.Id,
                 Text = commentText,
                 CreatedAt = DateTime.Now
+
             };
 
             // Lưu bình luận vào cơ sở dữ liệu
@@ -141,30 +169,45 @@ namespace PortfolioWeb.Controllers
 
 
 
-        // Lấy bình luận của bài viết
         [HttpGet]
         public JsonResult GetComments(int postId)
         {
             var comments = db.Comments
-                              .Where(c => c.PostId == postId)
-                              .Include(c => c.User)
-                              .OrderByDescending(c => c.CreatedAt)
-                              .Select(c => new
-                              {
-                                  c.User.UserName,
-                                  c.Text,
-                                  c.CreatedAt,
-                                  c.User.ProfileImage
-                              })
-                              .ToList();
+                         .Where(c => c.PostId == postId && c.ParentCommentId == null)  // Get root comments only
+                         .Include(c => c.User)
+                         .OrderByDescending(c => c.CreatedAt)
+                         .Select(c => new
+                         {
+                             c.Id,
+                             c.User.UserName,
+                             c.Text,
+                             c.CreatedAt,
+                             c.User.ProfileImage,
+                             Replies = c.Replies.OrderBy(r => r.CreatedAt)  // Make sure replies are ordered
+                                 .Select(r => new
+                                 {
+                                     r.User.UserName,
+                                     r.Text,
+                                     r.CreatedAt,
+                                     r.User.ProfileImage
+                                 }).ToList()
+                         })
+     .ToList();
 
-            // Chuyển đổi CreatedAt thành chuỗi và thêm "Ngày" hoặc "Đêm"
             var formattedComments = comments.Select(c => new
             {
+                c.Id,
                 c.UserName,
                 c.Text,
                 CreatedAt = GetFormattedDateTime(c.CreatedAt),
-                c.ProfileImage
+                c.ProfileImage,
+                Replies = c.Replies.Select(r => new
+                {
+                    r.UserName,
+                    r.Text,
+                    CreatedAt = GetFormattedDateTime(r.CreatedAt),
+                    r.ProfileImage
+                }).ToList()
             }).ToList();
 
             return Json(formattedComments, JsonRequestBehavior.AllowGet);
@@ -179,7 +222,7 @@ namespace PortfolioWeb.Controllers
             string formattedDate = localTime.ToString("dd/MM/yyyy HH:mm");
 
             // Kiểm tra xem giờ có thuộc buổi sáng, chiều hay đêm
-            string dayOrNight = localTime.Hour >= 6 && localTime.Hour < 18 ? "PM" : "AM";
+            string dayOrNight = localTime.Hour >= 6 && localTime.Hour < 18 ? "AM" : "PM";
 
             return $"{formattedDate} {dayOrNight}";
         }

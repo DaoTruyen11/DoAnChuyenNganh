@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNKRS - Trang Chủ</title>
+    <!-- Facebook SDK -->
+    <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=2357583287933691"
+            nonce="X2yZcPqf"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -28,6 +32,7 @@
             margin: 0;
             padding: 0;
             color: #000; /* Đặt màu chữ để đảm bảo dễ đọc */
+            padding-top: 70px;
         }
             body::before {
                 content: '';
@@ -40,7 +45,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
-       
+
             }
 
         .container {
@@ -182,6 +187,7 @@
             color: var(--primary-blue);
             cursor: pointer;
             font-size: 13px;
+            margin-left: 10px; /* Di chuyển nút trả lời gần thời gian */
         }
 
         .reply-form {
@@ -246,7 +252,67 @@
             text-transform: uppercase; /* Chuyển thành chữ in hoa */
             margin-bottom: 30px; /* Khoảng cách dưới tiêu đề */
         }
-        
+        .share-options {
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 1000;
+            width: 200px; /* Đặt chiều rộng cố định cho menu chia sẻ */
+        }
+
+            .share-options a {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                background-color: #1877F2; /* Màu Facebook */
+                padding: 10px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+                .share-options a:hover {
+                    background-color: #1568c0; /* Màu khi hover */
+                }
+        .comment-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+            .comment-item img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 12px;
+                object-fit: cover;
+            }
+
+            .comment-item p {
+                background-color: #e4e6eb;
+                padding: 8px 12px;
+                border-radius: 18px;
+                margin: 0;
+                position: relative;
+                flex-grow: 1;
+                max-width: calc(100% - 52px);
+            }
+
+            .comment-item em {
+                font-size: 12px;
+                color: #888;
+                margin-top: 5px;
+            }
+
+            .comment-item .reply-btn {
+                display: inline-block;
+                color: var(--primary-blue);
+                cursor: pointer;
+                font-size: 13px;
+                margin-left: 10px;
+            }
 
 
     </style>
@@ -255,23 +321,18 @@
 <body>
     <div class="container py-4">
         <section>
-            <h1 class="text-center mb-4 title-heading">Bảng Tin Hôm Nay</h1>
-
+            <h1 class="text-center mb-4 text-primary">Bảng Tin Hôm Nay</h1>
             <div class="chat-button ms-2 mb-4">
                 <a href="@Url.Action("Index1", "Chat")" class="btn btn-primary">
-                    <i class="fas fa-robot"></i> Trò chuyện với AI
+                    <i class="fas fa-robot"></i> Trò chuyện với IA
                 </a>
             </div>
-            <div id="imageModal" class="image-modal" style="display: none;">
-                <span class="close-modal" onclick="closeModal()">&times;</span>
-                <img id="modalImage" src="" alt="Full Image">
-            </div>
-            <div class="container">
+            <div>
                 @foreach (var post in Model.Portfolios)
                 {
                     <div class="fb-post" id="post-@post.Id">
                         <div class="fb-post-header">
-                            <img src="@post.Image" class="fb-user-avatar" alt="User Avatar" loading="lazy">
+                            <img src="@post.Image" class="fb-user-avatar" alt="User Avatar">
                             <div class="fb-user-name">
                                 <h5>@post.Name</h5>
                             </div>
@@ -285,9 +346,8 @@
                         @if (!string.IsNullOrEmpty(post.Image))
                         {
                             <div class="fb-post-image">
-                                <img src="@post.Image" alt="Post Image" loading="lazy" onclick="openModal('@post.Image')">
+                                <img src="@post.Image" alt="Post Image">
                             </div>
-
                         }
                         <div class="fb-post-actions">
                             <div class="like-btn" onclick="likePost(@post.Id)">👍 Thích <span id="like-count-@post.Id">@post.LikeCount</span></div>
@@ -302,89 +362,180 @@
                             <div id="comments-list-@post.Id" class="comments-list"></div>
                         </div>
                     </div>
+
                 }
             </div>
+
+            <script>
+                // Define these functions outside $(document).ready()
+                function likePost(postId) {
+                    $.post("/Post/LikePost", { postId: postId }, function (response) {
+                        if (response.status === "success") {
+                            $("#like-count-" + postId).text(response.likeCount);
+                        }
+                    });
+                }
+
+                function toggleComments(postId) {
+                    var commentsSection = $("#comments-" + postId);
+                    commentsSection.toggle();
+                    if (commentsSection.is(":visible")) {
+                        loadComments(postId);
+                    }
+                }
+
+                function commentPost(postId) {
+                    var commentText = $("#comment-input-" + postId).val();
+                    if (commentText.trim() === "") {
+                        alert("Vui lòng nhập bình luận.");
+                        return;
+                    }
+
+                    $.post("/Post/CommentPost", { postId: postId, commentText: commentText }, function (response) {
+                        if (response.status === "success") {
+                            $("#comment-count-" + postId).text(response.commentCount);
+                            loadComments(postId);
+                            $("#comment-input-" + postId).val('');
+                        } else {
+                            alert("Có lỗi xảy ra khi gửi bình luận.");
+                        }
+                    });
+                }
+                function replyToComment(commentId) {
+                    var replyText = $("#reply-text-" + commentId).val();
+                    if (replyText.trim() === "") {
+                        alert("Vui lòng nhập trả lời.");
+                        return;
+                    }
+
+                    $.post("/Post/ReplyToComment", { commentId: commentId, replyText: replyText }, function (response) {
+                        if (response.status === "success") {
+                            loadComments(response.postId);  // Tải lại bình luận và trả lời
+                        } else {
+                            alert("Có lỗi xảy ra khi gửi trả lời.");
+                        }
+                    });
+                }
+
+                function loadComments(postId) {
+                    $.get("/Post/GetComments", { postId: postId }, function (comments) {
+                        var commentsHtml = comments.map(function (comment) {
+                            var repliesHtml = '';
+                            if (comment.Replies && comment.Replies.length > 0) {
+                                repliesHtml = comment.Replies.map(function (reply) {
+                                    return "<div class='comment-item' style='margin-left: 30px;'>"
+                                        + "<img src='" + reply.ProfileImage + "' alt='User'>"
+                                        + "<p><strong>" + reply.UserName + ":</strong> " + reply.Text
+                                        + " <em>" + reply.CreatedAt + "</em></p></div>";
+                                }).join('');
+                            }
+
+                            var commentHtml = "<div class='comment-item'>"
+                                + "<img src='" + comment.ProfileImage + "' alt='User'>"
+                                + "<p><strong>" + comment.UserName + ":</strong> " + comment.Text
+                                + " <em>" + comment.CreatedAt + "</em></p>"
+                                + "<div class='reply-btn' data-comment-id='" + comment.Id + "'>Trả lời</div>"
+                                + "</div>";
+
+                            return commentHtml + repliesHtml;
+                        }).join('');
+                        $("#comments-list-" + postId).html(commentsHtml);
+                    });
+                }
+
+                $(document).ready(function () {
+                    // Lọc các bài viết khi trang tải
+                    $(".fb-post").each(function () {
+                        var postId = $(this).attr("id").replace("post-", "");
+                        updateCommentCount(postId);
+                    });
+
+                    // Cập nhật số lượng bình luận
+                    function updateCommentCount(postId) {
+                        $.get("/Post/GetCommentsCount", { postId: postId }, function (response) {
+                            if (response.status === "success") {
+                                $("#comment-count-" + postId).text(response.commentCount);
+                            }
+                        });
+                    }
+
+                    // Hiển thị form trả lời khi click "Trả lời"
+                    $(document).on("click", ".reply-btn", function () {
+                        var commentId = $(this).data("comment-id");
+
+                        // Kiểm tra nếu form trả lời đã tồn tại
+                        var existingReplyForm = $("#reply-form-" + commentId);
+                        if (existingReplyForm.length > 0) {
+                            existingReplyForm.toggle(); // Chuyển đổi trạng thái hiển thị của form trả lời
+                        } else {
+                            // Tạo form trả lời mới
+                            var replyFormHtml = "<div class='reply-form' id='reply-form-" + commentId + "'>"
+                                + "<textarea class='form-control' id='reply-text-" + commentId + "' placeholder='Viết trả lời...'></textarea>"
+                                + "<button class='btn btn-primary btn-sm reply-submit' data-comment-id='" + commentId + "'>Gửi</button>"
+                                + "</div>";
+
+                            // Thêm form trả lời sau bình luận
+                            $(this).after(replyFormHtml);
+                        }
+                    });
+
+                    // Hàm gửi trả lời
+                    $(document).on("click", ".reply-submit", function () {
+                        var commentId = $(this).data("comment-id");
+                        var replyText = $("#reply-text-" + commentId).val();
+                        if (replyText.trim() === "") {
+                            alert("Vui lòng nhập trả lời.");
+                            return;
+                        }
+
+                        $.post("/Post/ReplyToComment", { commentId: commentId, replyText: replyText }, function (response) {
+                            if (response.status === "success") {
+                                loadComments(response.postId);
+                            } else {
+                                alert("Có lỗi xảy ra khi gửi trả lời.");
+                            }
+                        });
+                    });
+
+                    // Hàm tải lại bình luận và trả lời
+                    function loadComments(postId) {
+                        $.get("/Post/GetComments", { postId: postId }, function (comments) {
+                            var commentsHtml = comments.map(function (comment) {
+                                var repliesHtml = '';
+                                // Check if the comment has replies and render them
+                                if (comment.Replies && comment.Replies.length > 0) {
+                                    repliesHtml = comment.Replies.map(function (reply) {
+                                        return "<div class='comment-item' style='margin-left: 30px;'>"
+                                            + "<img src='" + reply.ProfileImage + "' alt='User'>"
+                                            + "<p><strong>" + reply.UserName + ":</strong> " + reply.Text
+                                            + " <em>" + reply.CreatedAt + "</em></p>"
+                                            + "</div>";
+                                    }).join('');
+                                }
+
+                                var commentHtml = "<div class='comment-item'>"
+                                    + "<img src='" + comment.ProfileImage + "' alt='User'>"
+                                    + "<p><strong>" + comment.UserName + ":</strong> " + comment.Text
+                                    + " <em>" + comment.CreatedAt + "</em></p>"
+                                    + "<div class='reply-btn' data-comment-id='" + comment.Id + "'>Trả lời</div>"
+                                    + "</div>";
+
+                                // Return the comment with its replies
+                                return commentHtml + repliesHtml;
+                            }).join('');
+
+                            $("#comments-list-" + postId).html(commentsHtml);
+                        });
+                    }
+
+
+
+                    
+                });
+
+            </script>
         </section>
     </div>
-
-    <script>
-        function likePost(postId) {
-            $.post("/Post/LikePost", { postId: postId }, function (response) {
-                if (response.status === "success") {
-                    $("#like-count-" + postId).text(response.likeCount);
-                }
-            });
-        }
-
-        function toggleComments(postId) {
-            var commentsSection = $("#comments-" + postId);
-            commentsSection.toggle();
-            if (commentsSection.is(":visible")) {
-                loadComments(postId);
-            }
-        }
-
-        function commentPost(postId) {
-            var commentText = $("#comment-input-" + postId).val();
-            if (commentText.trim() === "") {
-                alert("Vui lòng nhập bình luận.");
-                return;
-            }
-
-            $.post("/Post/CommentPost", { postId: postId, commentText: commentText }, function (response) {
-                if (response.status === "success") {
-                    $("#comment-count-" + postId).text(response.commentCount);
-                    loadComments(postId);
-                    $("#comment-input-" + postId).val('');
-                } else {
-                    alert("Có lỗi xảy ra khi gửi bình luận.");
-                }
-            });
-        }
-
-        function loadComments(postId) {
-            $.get("/Post/GetComments", { postId: postId }, function (comments) {
-                var commentsHtml = comments.map(function (comment) {
-                    return `
-                                <div class="comment-item">
-                                    <img src="${comment.ProfileImage}" alt="User">
-                                    <p>
-                                        <strong>${comment.UserName}:</strong> ${comment.Text}
-                                        <em>${comment.CreatedAt}</em>
-                                    </p>
-                                </div>
-                            `;
-                }).join('');
-                $("#comments-list-" + postId).html(commentsHtml);
-            });
-        }
-
-        $(document).ready(function () {
-            $(".fb-post").each(function () {
-                var postId = $(this).attr("id").replace("post-", "");
-                loadComments(postId);
-            });
-        });
-    </script>
-    <script>
-        function openModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            modalImage.src = imageSrc;
-            modal.style.display = 'flex';
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.style.display = 'none';
-        }
-
-        // Xử lý zoom in/zoom out
-        document.getElementById('modalImage').addEventListener('click', function () {
-            this.classList.toggle('zoomed');
-        });
-    </script>
-
 </body>
 
 </html>
