@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|d:\\webfortpolio\\dacn\\snkrs\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|D:\\WebFortpolio\\DACN\\snkrs\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -165,7 +165,7 @@
               "RelativeDocumentMoniker": "SNKRS\\Views\\Web.config",
               "ToolTip": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Web.config",
               "RelativeToolTip": "SNKRS\\Views\\Web.config",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-03-24T03:28:55.394Z",
               "EditorCaption": ""

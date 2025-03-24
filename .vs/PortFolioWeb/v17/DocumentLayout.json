@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\WebFortpolio\\DACN\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|d:\\webfortpolio\\dacn\\snkrs\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|D:\\WebFortpolio\\DACN\\snkrs\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|d:\\webfortpolio\\dacn\\snkrs\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|solutionrelative:snkrs\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD02A58F-2523-49CF-80C8-BE00BAAC951D}|SNKRS\\PortfolioWeb.csproj|D:\\WebFortpolio\\DACN\\snkrs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -142,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -159,13 +159,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Web.config",
               "RelativeDocumentMoniker": "SNKRS\\Views\\Web.config",
               "ToolTip": "D:\\WebFortpolio\\DACN\\SNKRS\\Views\\Web.config",
               "RelativeToolTip": "SNKRS\\Views\\Web.config",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-03-24T03:28:55.394Z",
               "EditorCaption": ""
@@ -220,13 +220,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\WebFortpolio\\DACN\\SNKRS\\Web.config",
               "RelativeDocumentMoniker": "SNKRS\\Web.config",
               "ToolTip": "D:\\WebFortpolio\\DACN\\SNKRS\\Web.config",
               "RelativeToolTip": "SNKRS\\Web.config",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIIAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-12-26T18:34:56.26Z",
               "EditorCaption": ""
